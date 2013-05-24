@@ -1,0 +1,13 @@
+digraph G {
+"PatternNode(*.html|hd|ft|jinja)" -> "PatternNode(*.md|pandoc|htmlsections)";
+"PatternNode(*.html|hd|ft|jinja)" -> "PatternNode(*.html|htmlsections)";
+"PatternNode(*.html|hd|ft|jinja)" -> "PatternNode(*.css|idio)";
+"PatternNode(*.html|hd|ft|jinja)" -> "PatternNode(*.scss|idio)";
+"PatternNode(*.html|hd|ft|jinja)" -> "Doc(_header.html|jinja)";
+"PatternNode(*.html|hd|ft|jinja)" -> "PatternNode(_*.html)";
+"PatternNode(*.html|hd|ft|jinja)" -> "Doc(screenshots.js|casperjs)";
+"PatternNode(*.html|hd|ft|jinja)" -> "PatternNode(*.js|idio)";
+"PatternNode(*.html|hd|ft|jinja)" -> "PatternNode(*.css|idio)";
+"BundleNode(assets)" -> "PatternNode(*.png)";
+"BundleNode(assets)" -> "PatternNode(*.css)";
+}

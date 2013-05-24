@@ -1,0 +1,3 @@
+    <button type="submit" class="btn primary call-to-action">Call to Action</button>
+    <button type="submit" class="btn link cancel-action">Cancel</button>
+    

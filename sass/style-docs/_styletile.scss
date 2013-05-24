@@ -1,0 +1,81 @@
+/**
+ * Style Tile Style
+ *
+ */
+
+/*@include grid-debug();*/
+
+
+/**
+ * Swatches
+ */
+$swatch-border: 4px solid white;
+$swatch-shadow: 0px 0px 6px 0px rgba(0,0,0,.25);
+$swatch-margin: 1%;
+
+.swatch-row { 
+  @include pie-clearfix;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  li {
+    float: left;
+  }
+}
+
+.swatch-1of1 { width: 100%; }
+.swatch-1of2 { width: ( 100% - ( $swatch-margin * ( 1 ) ) ) / 2; }
+.swatch-1of3 { width: ( 100% - ( $swatch-margin * ( 2 ) ) ) / 3; }
+.swatch-1of4 { width: ( 100% - ( $swatch-margin * ( 3 ) ) ) / 4; }
+.swatch-1of5 { width: ( 100% - ( $swatch-margin * ( 4 ) ) ) / 5; }
+.swatch-1of6 { width: ( 100% - ( $swatch-margin * ( 5 ) ) ) / 6; }
+.swatch-1of7 { width: ( 100% - ( $swatch-margin * ( 6 ) ) ) / 7; }
+.swatch-1of8 { width: ( 100% - ( $swatch-margin * ( 7 ) ) ) / 8; }
+
+[class*="swatch-1"] { margin-right: $swatch-margin; }
+[class*="swatch-1"]:last-of-type { margin-right: 0; }
+
+/**
+ * Color Swatches
+ */
+$color-swatch-height: 5em;
+$color-swatch-1: black;
+$color-swatch-2: #222222;
+$color-swatch-3: #666666;
+$color-swatch-4: #999999;
+$color-swatch-5: #ffffff;
+$color-swatch--margin: $swatch-margin;
+
+[class*="color-swatch-"] {
+  height: $color-swatch-height;
+  border: $swatch-border;
+  box-shadow: $swatch-shadow;
+}
+
+
+.color-swatch-1 { background: $color-swatch-1; }
+.color-swatch-2 { background: $color-swatch-2; }
+.color-swatch-3 { background: $color-swatch-3; }
+.color-swatch-4 { background: $color-swatch-4; }
+.color-swatch-5 { background: $color-swatch-5; }
+
+/**
+ * Texture Swatches
+ */
+$texture-swatch-height: 8em;
+$texture-swatch-1-background: #ffffff;
+$texture-swatch-2-background: #ffffff;
+$texture-swatch-3-background: #ffffff;
+
+[class*="texture-swatch-"] {
+  overflow: hidden;
+  height: $texture-swatch-height;
+  border: $swatch-border;
+  box-shadow: $swatch-shadow;
+}
+
+.texture-swatch-1 { background: $texture-swatch-1-background; }
+.texture-swatch-2 { background: $texture-swatch-2-background; }
+.texture-swatch-3 { background: $texture-swatch-3-background; }
+
+

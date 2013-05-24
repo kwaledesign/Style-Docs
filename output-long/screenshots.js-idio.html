@@ -1,0 +1,16 @@
+<div class="highlight"><pre><a name="screenshots.js-idio.html-1"></a><span class="kd">var</span> <span class="nx">casper</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;casper&#39;</span><span class="p">).</span><span class="nx">create</span><span class="p">({</span>
+<a name="screenshots.js-idio.html-2"></a>    <span class="nx">viewportSize</span><span class="o">:</span> <span class="p">{</span>
+<a name="screenshots.js-idio.html-3"></a>        <span class="nx">width</span><span class="o">:</span> <span class="mi">800</span><span class="p">,</span>
+<a name="screenshots.js-idio.html-4"></a>        <span class="nx">height</span><span class="o">:</span> <span class="mi">600</span>
+<a name="screenshots.js-idio.html-5"></a>    <span class="p">}</span>
+<a name="screenshots.js-idio.html-6"></a><span class="p">});</span>
+<a name="screenshots.js-idio.html-7"></a>
+<a name="screenshots.js-idio.html-8"></a><span class="nx">casper</span><span class="p">.</span><span class="nx">start</span><span class="p">(</span><span class="s1">&#39;/Applications/MAMP/htdocs/Style-Docs/demo/demo.html&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<a name="screenshots.js-idio.html-9"></a><span class="p">});</span>
+<a name="screenshots.js-idio.html-10"></a>
+<a name="screenshots.js-idio.html-11"></a><span class="nx">casper</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<a name="screenshots.js-idio.html-12"></a>    <span class="k">this</span><span class="p">.</span><span class="nx">captureSelector</span><span class="p">(</span><span class="s1">&#39;imgs/button.png&#39;</span><span class="p">,</span> <span class="s1">&#39;button&#39;</span><span class="p">);</span>
+<a name="screenshots.js-idio.html-13"></a><span class="p">});</span>
+<a name="screenshots.js-idio.html-14"></a>
+<a name="screenshots.js-idio.html-15"></a><span class="nx">casper</span><span class="p">.</span><span class="nx">run</span><span class="p">();</span>
+</pre></div>

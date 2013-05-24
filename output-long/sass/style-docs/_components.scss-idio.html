@@ -1,0 +1,89 @@
+<div class="highlight"><pre><a name="sass--style-docs--_components.scss-idio.html-1"></a><span class="cm">/**</span>
+<a name="sass--style-docs--_components.scss-idio.html-2"></a><span class="cm"> * Components</span>
+<a name="sass--style-docs--_components.scss-idio.html-3"></a><span class="cm"> *</span>
+<a name="sass--style-docs--_components.scss-idio.html-4"></a><span class="cm"> * page components for style-docs</span>
+<a name="sass--style-docs--_components.scss-idio.html-5"></a><span class="cm"> */</span>
+</pre></div>
+
+<div class="highlight"><pre><a name="sass--style-docs--_components.scss-idio.html-9"></a><span class="cm">/**</span>
+<a name="sass--style-docs--_components.scss-idio.html-10"></a><span class="cm"> * Header</span>
+<a name="sass--style-docs--_components.scss-idio.html-11"></a><span class="cm"> */</span>
+<a name="sass--style-docs--_components.scss-idio.html-12"></a><span class="k">@mixin</span><span class="nf"> styleguide-header--structure</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-13"></a>  <span class="na">background</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-14"></a>  <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-15"></a><span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-16"></a>
+<a name="sass--style-docs--_components.scss-idio.html-17"></a><span class="k">@mixin</span><span class="nf"> styleguide-header--skin</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-18"></a>  <span class="na">padding</span><span class="o">:</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-19"></a><span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-20"></a>
+<a name="sass--style-docs--_components.scss-idio.html-21"></a><span class="nc">.styleguide-header</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-22"></a>  <span class="k">@include</span><span class="nd"> styleguide-header--structure</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-23"></a>  <span class="k">@include</span><span class="nd"> styleguide-header--skin</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-24"></a><span class="p">}</span>
+</pre></div>
+
+<div class="highlight"><pre><a name="sass--style-docs--_components.scss-idio.html-27"></a><span class="cm">/**</span>
+<a name="sass--style-docs--_components.scss-idio.html-28"></a><span class="cm"> * Navigation</span>
+<a name="sass--style-docs--_components.scss-idio.html-29"></a><span class="cm"> * </span>
+<a name="sass--style-docs--_components.scss-idio.html-30"></a><span class="cm"> */</span>
+<a name="sass--style-docs--_components.scss-idio.html-31"></a><span class="nc">.global-nav</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-32"></a>  <span class="nt">ul</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-33"></a>    <span class="na">list-style</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-34"></a>    <span class="na">padding</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-35"></a>    <span class="na">margin</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-36"></a>    <span class="k">@include</span><span class="nd"> pie-clearfix</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-37"></a>    <span class="k">&amp;</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-38"></a>      <span class="na">float</span><span class="o">:</span> <span class="no">left</span><span class="p">;</span>  
+<a name="sass--style-docs--_components.scss-idio.html-39"></a>    <span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-40"></a>    <span class="k">&amp;</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">a</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-41"></a>      <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="no">block</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-42"></a>      <span class="na">margin-right</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-43"></a>    <span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-44"></a>    <span class="nt">a</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-45"></a>      <span class="na">color</span><span class="o">:</span> <span class="mh">#999999</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-46"></a>      <span class="na">font-weight</span><span class="o">:</span> <span class="no">normal</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-47"></a>      <span class="na">text-decoration</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-48"></a>      <span class="k">&amp;</span><span class="nd">:visited</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-49"></a>        <span class="na">color</span><span class="o">:</span> <span class="mh">#999999</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-50"></a>      <span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-51"></a>      <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-52"></a>        <span class="na">color</span><span class="o">:</span> <span class="mh">#ffffff</span><span class="p">;</span> 
+<a name="sass--style-docs--_components.scss-idio.html-53"></a>      <span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-54"></a>    <span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-55"></a>  <span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-56"></a><span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-57"></a>
+<a name="sass--style-docs--_components.scss-idio.html-58"></a>
+<a name="sass--style-docs--_components.scss-idio.html-59"></a>
+<a name="sass--style-docs--_components.scss-idio.html-60"></a><span class="cm">/**</span>
+<a name="sass--style-docs--_components.scss-idio.html-61"></a><span class="cm"> * Footer</span>
+<a name="sass--style-docs--_components.scss-idio.html-62"></a><span class="cm"> */</span>
+<a name="sass--style-docs--_components.scss-idio.html-63"></a><span class="k">@mixin</span><span class="nf"> styleguide-footer--skin</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-64"></a>  <span class="na">background</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-65"></a>  <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-66"></a><span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-67"></a>
+<a name="sass--style-docs--_components.scss-idio.html-68"></a><span class="k">@mixin</span><span class="nf"> styleguide-footer--structure</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-69"></a>  <span class="na">padding</span><span class="o">:</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-70"></a><span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-71"></a>
+<a name="sass--style-docs--_components.scss-idio.html-72"></a><span class="nc">.styleguide-footer</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-73"></a>  <span class="na">clear</span><span class="o">:</span> <span class="no">both</span><span class="p">;</span> 
+<a name="sass--style-docs--_components.scss-idio.html-74"></a>  <span class="k">@include</span><span class="nd"> styleguide-footer--structure</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-75"></a>  <span class="k">@include</span><span class="nd"> styleguide-footer--skin</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-76"></a><span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-77"></a>
+<a name="sass--style-docs--_components.scss-idio.html-78"></a><span class="cm">/**</span>
+<a name="sass--style-docs--_components.scss-idio.html-79"></a><span class="cm"> * Code Block</span>
+<a name="sass--style-docs--_components.scss-idio.html-80"></a><span class="cm"> */</span>
+<a name="sass--style-docs--_components.scss-idio.html-81"></a><span class="cm">/* @TODO: possible to inject classes in Dexy generated markup, to allow for scoped styles? */</span>
+<a name="sass--style-docs--_components.scss-idio.html-82"></a><span class="nt">code</span><span class="o">,</span>
+<a name="sass--style-docs--_components.scss-idio.html-83"></a><span class="nt">pre</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-84"></a>  <span class="na">background</span><span class="o">:</span> <span class="ni">ghostwhite</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-85"></a>  <span class="na">border</span><span class="o">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="no">solid</span> <span class="n">grey</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-86"></a>  <span class="na">border-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-87"></a>  <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="no">block</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-88"></a>  <span class="na">padding</span><span class="o">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-89"></a><span class="p">}</span>
+</pre></div>

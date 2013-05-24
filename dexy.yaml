@@ -1,0 +1,14 @@
+.html|hd|ft|jinja:
+    - .md|pandoc|htmlsections
+    - .html|htmlsections
+    - .css|idio
+    - .scss|idio
+    - _header.html|jinja
+    - _*.html
+    - screenshots.js|casperjs
+    - .js|idio
+    - .css|idio
+
+assets:
+    - .png
+    - .css

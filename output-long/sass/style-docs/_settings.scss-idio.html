@@ -1,0 +1,116 @@
+<div class="highlight"><pre><a name="sass--style-docs--_settings.scss-idio.html-1"></a><span class="cm">/**</span>
+<a name="sass--style-docs--_settings.scss-idio.html-2"></a><span class="cm"> * Settings</span>
+<a name="sass--style-docs--_settings.scss-idio.html-3"></a><span class="cm"> *</span>
+<a name="sass--style-docs--_settings.scss-idio.html-4"></a><span class="cm"> */</span>
+<a name="sass--style-docs--_settings.scss-idio.html-5"></a>
+<a name="sass--style-docs--_settings.scss-idio.html-6"></a><span class="cm">/**</span>
+<a name="sass--style-docs--_settings.scss-idio.html-7"></a><span class="cm"> * Imports</span>
+<a name="sass--style-docs--_settings.scss-idio.html-8"></a><span class="cm"> */</span>
+<a name="sass--style-docs--_settings.scss-idio.html-9"></a><span class="k">@import</span> <span class="s2">&quot;compass&quot;</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-10"></a>
+<a name="sass--style-docs--_settings.scss-idio.html-11"></a>
+<a name="sass--style-docs--_settings.scss-idio.html-12"></a><span class="cm">/**</span>
+<a name="sass--style-docs--_settings.scss-idio.html-13"></a><span class="cm"> * Syntax Highlighting </span>
+<a name="sass--style-docs--_settings.scss-idio.html-14"></a><span class="cm"> */</span>
+<a name="sass--style-docs--_settings.scss-idio.html-15"></a>
+<a name="sass--style-docs--_settings.scss-idio.html-16"></a><span class="cm">/*Pygment variables*/</span>
+<a name="sass--style-docs--_settings.scss-idio.html-17"></a><span class="c1">//?.hll?</span>
+<a name="sass--style-docs--_settings.scss-idio.html-18"></a><span class="nv">$comment--txt-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-19"></a><span class="nv">$error--txt-color</span><span class="o">:</span> <span class="mh">#a61717</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-20"></a><span class="nv">$error--bg-color</span><span class="o">:</span> <span class="mh">#e3d2d2</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-21"></a><span class="nv">$keyword--txt-color</span><span class="o">:</span> <span class="mh">#008800</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-22"></a><span class="nv">$keyword--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-23"></a><span class="nv">$multiline-comment--txt-color</span><span class="o">:</span> <span class="mh">#888888</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-24"></a><span class="nv">$comment-preproc--txt-color</span><span class="o">:</span> <span class="mh">#cc0000</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-25"></a><span class="nv">$comment-preproc--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-26"></a><span class="nv">$comment-single--txt-color</span><span class="o">:</span> <span class="mh">#888888</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-27"></a><span class="nv">$comment-special--txt-color</span><span class="o">:</span> <span class="mh">#cc0000</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-28"></a><span class="nv">$comment-special--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-29"></a><span class="nv">$comment-special--bg-color</span><span class="o">:</span> <span class="mh">#fff0f0</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-30"></a><span class="nv">$generic-deleted--txt-color</span><span class="o">:</span> <span class="mh">#000000</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-31"></a><span class="nv">$generic-deleted--bg-color</span><span class="o">:</span> <span class="mh">#ffdddd</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-32"></a><span class="nv">$generic-emphasis--font-style</span><span class="o">:</span> <span class="no">italic</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-33"></a><span class="nv">$generic-emphasis--font-weight</span><span class="o">:</span> <span class="no">normal</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-34"></a><span class="nv">$generic-error--txt-color</span><span class="o">:</span> <span class="mh">#aa0000</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-35"></a><span class="nv">$generic-heading--txt-color</span><span class="o">:</span> <span class="mh">#333333</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-36"></a><span class="nv">$generic-inserted--txt-color</span><span class="o">:</span> <span class="mh">#000000</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-37"></a><span class="nv">$generic-inserted--bg-color</span><span class="o">:</span> <span class="mh">#ddffdd</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-38"></a><span class="nv">$generic-output--txt-color</span><span class="o">:</span> <span class="mh">#888888</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-39"></a><span class="nv">$generic-prompt--txt-color</span><span class="o">:</span> <span class="mh">#555555</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-40"></a><span class="nv">$generic-strong--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-41"></a><span class="nv">$generic-subheading--txt-color</span><span class="o">:</span> <span class="mh">#666666</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-42"></a><span class="nv">$generic-trackback--txt-color</span><span class="o">:</span> <span class="mh">#aa0000</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-43"></a><span class="nv">$keyword-constant--txt-color</span><span class="o">:</span> <span class="mh">#008800</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-44"></a><span class="nv">$keyword-constant--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-45"></a><span class="nv">$keyword-declaration--txt-color</span><span class="o">:</span> <span class="mh">#008800</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-46"></a><span class="nv">$keyword-declaration--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-47"></a><span class="nv">$keyword-namespace--txt-color</span><span class="o">:</span> <span class="mh">#008800</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-48"></a><span class="nv">$keyword-namespace--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-49"></a><span class="nv">$keyword-pseudo--txt-color</span><span class="o">:</span> <span class="mh">#008800</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-50"></a><span class="nv">$keyword-reserved--txt-color</span><span class="o">:</span> <span class="mh">#008800</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-51"></a><span class="nv">$keyword-reserved--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-52"></a><span class="nv">$keyword-type--txt-color</span><span class="o">:</span> <span class="mh">#888888</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-53"></a><span class="nv">$keyword-type--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-54"></a><span class="nv">$literal-number--txt-color</span><span class="o">:</span> <span class="mh">#0000DD</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-55"></a><span class="nv">$literal-number--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-56"></a><span class="nv">$literal-string--txt-color</span><span class="o">:</span> <span class="mh">#dd2200</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-57"></a><span class="nv">$literal-string--bg-color</span><span class="o">:</span> <span class="mh">#fff0f0</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-58"></a><span class="nv">$name-attribute--txt-color</span><span class="o">:</span> <span class="mh">#336699</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-59"></a><span class="nv">$name-builtin--txt-color</span><span class="o">:</span> <span class="mh">#003388</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-60"></a><span class="nv">$name-class--txt-color</span><span class="o">:</span> <span class="mh">#bb0066</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-61"></a><span class="nv">$name-class--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-62"></a><span class="nv">$name-constant--txt-color</span><span class="o">:</span> <span class="mh">#003366</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-63"></a><span class="nv">$name-constant--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-64"></a><span class="nv">$name-decorator--txt-color</span><span class="o">:</span> <span class="mh">#555555</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-65"></a><span class="nv">$name-exception--txt-color</span><span class="o">:</span> <span class="mh">#bb0066</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-66"></a><span class="nv">$name-exception--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-67"></a><span class="nv">$name-function--txt-color</span><span class="o">:</span> <span class="mh">#0066bb</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-68"></a><span class="nv">$name-function--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-69"></a><span class="nv">$name-label--txt-color</span><span class="o">:</span> <span class="mh">#336699</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-70"></a><span class="nv">$name-label--font-style</span><span class="o">:</span> <span class="no">italic</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-71"></a><span class="nv">$name-namespace--txt-color</span><span class="o">:</span> <span class="mh">#bb0066</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-72"></a><span class="nv">$name-namespace--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-73"></a><span class="nv">$name-property--txt-color</span><span class="o">:</span> <span class="mh">#336699</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-74"></a><span class="nv">$name-property--font-weight</span><span class="o">:</span>  <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-75"></a><span class="nv">$name-tag--txt-color</span><span class="o">:</span> <span class="mh">#bb0066</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-76"></a><span class="nv">$name-tag--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-77"></a><span class="nv">$name-variable--txt-color</span><span class="o">:</span> <span class="mh">#336699</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-78"></a><span class="nv">$operator-word--txt-color</span><span class="o">:</span> <span class="mh">#008800</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-79"></a><span class="nv">$text-whitespace--txt-color</span><span class="o">:</span> <span class="mh">#bbbbbb</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-80"></a><span class="nv">$literal-number-float--txt-color</span><span class="o">:</span> <span class="mh">#0000DD</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-81"></a><span class="nv">$literal-number-float--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-82"></a><span class="nv">$literal-number-hex--txt-color</span><span class="o">:</span> <span class="mh">#0000DD</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-83"></a><span class="nv">$literal-number-hex--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-84"></a><span class="nv">$literal-number-integer--txt-color</span><span class="o">:</span> <span class="mh">#0000DD</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-85"></a><span class="nv">$literal-number-integer--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-86"></a><span class="nv">$literal-number-oct--txt-color</span><span class="o">:</span> <span class="mh">#0000DD</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-87"></a><span class="nv">$literal-number-oct--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-88"></a><span class="nv">$literal-string-backtick--txt-color</span><span class="o">:</span> <span class="mh">#dd2200</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-89"></a><span class="nv">$literal-string-backtick--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-90"></a><span class="nv">$literal-string-char--txt-color</span><span class="o">:</span> <span class="mh">#dd2200</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-91"></a><span class="nv">$literal-string-char--bg-color</span><span class="o">:</span> <span class="mh">#fff0f0</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-92"></a><span class="nv">$literal-string-doc--txt-color</span><span class="o">:</span> <span class="mh">#dd2200</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-93"></a><span class="nv">$literal-string-doc--bg-color</span><span class="o">:</span> <span class="mh">#fff0f0</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-94"></a><span class="nv">$literal-string-double--txt-color</span><span class="o">:</span> <span class="mh">#dd2200</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-95"></a><span class="nv">$literal-string-double--bg-color</span><span class="o">:</span> <span class="mh">#fff0f0</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-96"></a><span class="nv">$literal-string-escape--txt-color</span><span class="o">:</span> <span class="mh">#0044dd</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-97"></a><span class="nv">$literal-string-escape--bg-color</span><span class="o">:</span> <span class="mh">#fff0f0</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-98"></a><span class="nv">$literal-string-heredoc--txt-color</span><span class="o">:</span> <span class="mh">#dd2200</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-99"></a><span class="nv">$literal-string-heredoc--bg-color</span><span class="o">:</span> <span class="mh">#fff0f0</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-100"></a><span class="nv">$literal-string-interpol--txt-color</span><span class="o">:</span> <span class="mh">#3333bb</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-101"></a><span class="nv">$literal-string-interpol--bg-color</span><span class="o">:</span> <span class="mh">#fff0f0</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-102"></a><span class="nv">$literal-string-other--txt-color</span><span class="o">:</span> <span class="mh">#22bb22</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-103"></a><span class="nv">$literal-string-other--bg-color</span><span class="o">:</span> <span class="mh">#f0fff0</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-104"></a><span class="nv">$literal-string-regex--txt-color</span><span class="o">:</span> <span class="mh">#008800</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-105"></a><span class="nv">$literal-string-regex--bg-color</span><span class="o">:</span> <span class="mh">#fff0ff</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-106"></a><span class="nv">$literal-string-single--txt-color</span><span class="o">:</span> <span class="mh">#dd2200</span><span class="p">;</span> 
+<a name="sass--style-docs--_settings.scss-idio.html-107"></a><span class="nv">$literal-string-single--bg-color</span><span class="o">:</span> <span class="mh">#fff0f0</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-108"></a><span class="nv">$literal-string-symbol--txt-color</span><span class="o">:</span> <span class="mh">#aa6600</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-109"></a><span class="nv">$literal-string-symbol--bg-color</span><span class="o">:</span> <span class="mh">#fff0f0</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-110"></a><span class="nv">$name-builtin-pseudo--txt-color</span><span class="o">:</span> <span class="mh">#003388</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-111"></a><span class="nv">$name-variable-class--txt-color</span><span class="o">:</span> <span class="mh">#336699</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-112"></a><span class="nv">$name-variable-global--txt-color</span><span class="o">:</span> <span class="mh">#dd7700</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-113"></a><span class="nv">$name-variable-instance--txt-color</span><span class="o">:</span> <span class="mh">#3333bb</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-114"></a><span class="nv">$literal-number-integer-long--txt-color</span><span class="o">:</span> <span class="mh">#0000DD</span><span class="p">;</span>
+<a name="sass--style-docs--_settings.scss-idio.html-115"></a><span class="nv">$literal-number-integer-long--font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+</pre></div>

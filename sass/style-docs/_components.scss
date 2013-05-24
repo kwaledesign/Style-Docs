@@ -1,0 +1,93 @@
+/**
+ * Components
+ *
+ * page components for style-docs
+ */
+
+
+/*** @export "sass-header" css */
+/**
+ * Header
+ */
+@mixin styleguide-header--structure {
+  background: black;
+  color: white;
+}
+
+@mixin styleguide-header--skin {
+  padding: 20px 10px 20px 10px;
+}
+
+.styleguide-header {
+  @include styleguide-header--structure;
+  @include styleguide-header--skin;
+}
+
+/*** @export "footer" css */
+
+/**
+ * Navigation
+ * 
+ */
+.global-nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include pie-clearfix;
+    & > li {
+      float: left;  
+    }
+    & > li > a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    a {
+      color: #999999;
+      font-weight: normal;
+      text-decoration: none;
+      &:visited {
+        color: #999999;
+      }
+      &:hover {
+        color: #ffffff; 
+      }
+    }
+  }
+}
+
+
+
+/**
+ * Footer
+ */
+@mixin styleguide-footer--skin {
+  background: black;
+  color: white;
+}
+
+@mixin styleguide-footer--structure {
+  padding: 20px 10px 20px 10px;
+}
+
+.styleguide-footer {
+  clear: both; 
+  @include styleguide-footer--structure;
+  @include styleguide-footer--skin;
+}
+
+/**
+ * Code Block
+ */
+/* @TODO: possible to inject classes in Dexy generated markup, to allow for scoped styles? */
+code,
+pre {
+  background: ghostwhite;
+  border: 1px solid grey;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 1em;
+}
+
+
+
