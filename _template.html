@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head -%}
+{% include 'includes/_head.html' -%}
+{% endblock %}
+<body class="container">
+  
+  <header class="styleguide-header">
+      <h1>[project-name] Style Documents</h1>
+      
+    <nav class="global-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cuti.html">CUTI</a></li>
+        <li><a href="brandguidelines.html">Brand Guidelines</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="styletile.html">Style Tile</a></li>
+        <li><a href="styleguide.html">Style Guide</a></li>
+        <li><a href="patternlibrary.html">Pattern Library</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="prototype.html">Prototype</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  
+
+  {% block page -%}
+  <div class="page">
+    {{ content }}
+  </div>
+  {% endblock %}
+  {% block footer -%}
+  {% include 'includes/_footer.html' %}
+  {%- endblock %}
+</body>
+</html>
+ 

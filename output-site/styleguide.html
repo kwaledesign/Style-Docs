@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Styleguide</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../css/screen.css" media="screen">
+    <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+</head>
+
+<body class="container">
+  
+  <header class="styleguide-header">
+      <h1>[project-name] Style Documents</h1>
+      
+    <nav class="global-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cuti.html">CUTI</a></li>
+        <li><a href="brandguidelines.html">Brand Guidelines</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="styletile.html">Style Tile</a></li>
+        <li><a href="styleguide.html">Style Guide</a></li>
+        <li><a href="patternlibrary.html">Pattern Library</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="prototype.html">Prototype</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  
+
+  <div class="page">
+    <h1 id="begin-description.html-import">Begin description.html import</h1>
+<p class="lead">
+Here is the button lead paragraph marked up with the &quot;lead&quot; class.
+</p>
+
+<p>
+Buttons are a common ui component. The button object is extended with a size and type class. The button object and modifiers can be applied to both the button element or the link element. When using the link element first read this <a href="http://www.456bereastreet.com/archive/201302/making_elements_keyboard_focusable_and_clickable/#main">Making elements keyboard focassable and clickable</a>
+</p>
+
+
+<h1 id="button-image">Button Image:</h1>
+<p><img src="imgs/button.png" alt="" /></p>
+<h1 id="button-html">Button HTML:</h1>
+<div class="highlight"><pre><a name="l-1"></a>    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;btn primary call-to-action&quot;</span><span class="nt">&gt;</span>Call to Action<span class="nt">&lt;/button&gt;</span>
+<a name="l-2"></a>    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;btn link cancel-action&quot;</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+<a name="l-3"></a>    
+</pre></div>
+
+
+<h1 id="sass-header">Sass Header:</h1>
+<div class="highlight"><pre><a name="sass--style-docs--_components.scss-idio.html-9"></a><span class="cm">/**</span>
+<a name="sass--style-docs--_components.scss-idio.html-10"></a><span class="cm"> * Header</span>
+<a name="sass--style-docs--_components.scss-idio.html-11"></a><span class="cm"> */</span>
+<a name="sass--style-docs--_components.scss-idio.html-12"></a><span class="k">@mixin</span><span class="nf"> styleguide-header--structure</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-13"></a>  <span class="na">background</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-14"></a>  <span class="na">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-15"></a><span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-16"></a>
+<a name="sass--style-docs--_components.scss-idio.html-17"></a><span class="k">@mixin</span><span class="nf"> styleguide-header--skin</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-18"></a>  <span class="na">padding</span><span class="o">:</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-19"></a><span class="p">}</span>
+<a name="sass--style-docs--_components.scss-idio.html-20"></a>
+<a name="sass--style-docs--_components.scss-idio.html-21"></a><span class="nc">.styleguide-header</span> <span class="p">{</span>
+<a name="sass--style-docs--_components.scss-idio.html-22"></a>  <span class="k">@include</span><span class="nd"> styleguide-header--structure</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-23"></a>  <span class="k">@include</span><span class="nd"> styleguide-header--skin</span><span class="p">;</span>
+<a name="sass--style-docs--_components.scss-idio.html-24"></a><span class="p">}</span>
+</pre></div>
+
+
+<h1 id="button-css">Button CSS:</h1>
+<div class="highlight"><pre><a name="demo--style.css-idio.html-2"></a><span class="nt">button</span> <span class="p">{</span>
+<a name="demo--style.css-idio.html-3"></a>    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+<a name="demo--style.css-idio.html-4"></a>    <span class="k">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<a name="demo--style.css-idio.html-5"></a>    <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+<a name="demo--style.css-idio.html-6"></a>    <span class="k">border</span><span class="o">:</span> <span class="m">2px</span> <span class="k">solid</span> <span class="nb">darkred</span><span class="p">;</span>
+<a name="demo--style.css-idio.html-7"></a>    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">4px</span><span class="p">;</span>
+<a name="demo--style.css-idio.html-8"></a>    <span class="k">padding</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span>
+<a name="demo--style.css-idio.html-9"></a>    <span class="k">font</span><span class="o">:</span> <span class="m">110</span><span class="o">%</span> <span class="k">sans-serif</span><span class="p">;</span>
+<a name="demo--style.css-idio.html-10"></a><span class="p">}</span>
+</pre></div>
+
+
+<h1 id="buttons">Buttons:</h1>
+<pre><code>&lt;button type=&quot;submit&quot; class=&quot;btn primary call-to-action&quot;&gt;Call to Action&lt;/button&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn link cancel-action&quot;&gt;Cancel&lt;/button&gt;</code></pre>
+
+  </div>
+  
+  <footer class="styleguide-footer">
+  <p>Styleguide Footer Goes Here</p>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery.min.js"><\/script>')</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+</body>
+</html>
+ 

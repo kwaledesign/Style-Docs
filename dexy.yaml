@@ -1,14 +1,16 @@
-.html|hd|ft|jinja:
+site:
+  - .md|jinja|pandoc:
+    - pandoc: { args: '-t html5' } 
     - .md|pandoc|htmlsections
     - .html|htmlsections
-    - .css|idio
     - .scss|idio
-    - _header.html|jinja
-    - _*.html
-    - screenshots.js|casperjs
-    - .js|idio
     - .css|idio
+    - .js|idio
+#   - screenshots.js|casperjs
 
 assets:
-    - .png
-    - .css
+  - .css
+  - .js
+  - .png
+  - .jpg
+
