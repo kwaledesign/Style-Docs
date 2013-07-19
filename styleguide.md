@@ -1,19 +1,15 @@
-# Begin description.html import
-
-{{ (d['components/descriptions.md|pandoc|htmlsections']['buttons']) }}
+# Styleguide
 
 # Button Image:
+Using Phantom.js and Casper.js to automate screen shots at various states and screen contexts is advised early in the development process.  This mitigates cross browser issues and eliminates the need for extensive testing while still in the design phase of a project. 
+
 <img src="imgs/button.png" alt="" />
 
-# Button HTML:
-{{ highlight(d['components/sections.html|htmlsections']['buttons'], "html") }}
 
-# Sass Header:
-{{ d['sass/style-docs/_components.scss|idio']['sass-header'] }}
 
-# Button CSS:
-{{ d['demo/style.css|idio']['buttons'] }}
+# HTML Button:
+After sign off, screen shots will of course be replaced with live, tested code examples. Also at that time, additional documentation can be added to serve as a reference for non-technical team-members.
 
-# Buttons:
 {{ (d['components/sections.html|htmlsections']['buttons']) }}
 
+{{ highlight(d['components/sections.html|htmlsections']['buttons'], "html") }}
