@@ -5,11 +5,8 @@ Using Phantom.js and Casper.js to automate screen shots at various states and sc
 
 <img src="imgs/button.png" alt="" />
 
-
-
 # HTML Button:
 After sign off, screen shots will of course be replaced with live, tested code examples. Also at that time, additional documentation can be added to serve as a reference for non-technical team-members.
 
 {{ (d['components/sections.html|htmlsections']['buttons']) }}
 
-{{ highlight(d['components/sections.html|htmlsections']['buttons'], "html") }}
