@@ -5,11 +5,11 @@
 <div class="graphical-elements">
   <section class="color-pallet">
     ## Color Pallet
-    {{ (d['components/styletile.html|htmlsections']['color-stack']) }}
-    {{ (d['components/styletile.html|htmlsections']['tint-stack']) }}
-    {{ (d['components/styletile.html|htmlsections']['tone-stack']) }}
-    {{ (d['components/styletile.html|htmlsections']['shade-stack']) }}
-    {{ (d['components/styletile.html|htmlsections']['textures']) }}
+    {{ (d['components/color-pallet.html|htmlsections']['color-stack']) }}
+    {{ (d['components/color-pallet.html|htmlsections']['tint-stack']) }}
+    {{ (d['components/color-pallet.html|htmlsections']['tone-stack']) }}
+    {{ (d['components/color-pallet.html|htmlsections']['shade-stack']) }}
+    {{ (d['components/color-pallet.html|htmlsections']['textures']) }}
 </div>
 
 ## Gradients
