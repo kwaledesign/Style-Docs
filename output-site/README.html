@@ -38,16 +38,80 @@
 
   <div class="page">
     <h1 id="style-docs">Style-Docs</h1>
-<p>A framwork for building responsive design deliverables and styleguides in the browser.</p>
+<p>A framework for the rapid development of responsive design deliverables and designing in the browser powered by Dexy.</p>
+<blockquote>
+<p>“The way we publish on the web is mostly derived from what we know about putting ink on paper. The future of content is in smaller discrete objects that can be assembled into new containers.” - <a href="https://twitter.com/karenmcgrane">Karen McGrane</a></p>
+</blockquote>
+<p>Developing <a href="http://futurefriend.ly/">future friendly</a>, <a href="http://www.lukew.com/ff/entry.asp?933">mobile first</a> sites and applications requires the adoption of more <a href="https://speakerdeck.com/u/stephenhay/p/style-guides-are-the-new-photoshop-fronteers-2012">modern workflows</a> to accommodate for the <a href="http://alistapart.com/article/dao">fluid nature</a> of <a href="http://www.abookapart.com/products/responsive-web-design">responsive design</a>. Style-Docs is a framework on which to develop responsive design deliverables highly influenced by <a href="https://twitter.com/stephenhay">Stephen Hay's</a> excellent <a href="http://www.amazon.com/Responsive-Design-Workflow-Stephen-Hay/dp/0321887867">responsive design workflow</a></p>
+<h2 id="about-dexy">About Dexy</h2>
+<p><a href="www.dexy.it">Dexy</a> is an incredibly flexible documentation software built on Python that uses numerous filter plugins to allow for the use of live code examples to be output into any document you wish. Because everything is based on live code, updating documentation requires only a single command.</p>
+<p>Using Dexy to build responsive design deliverables is incredibly efficient because you can display code snippets, or the actual rendered output to document HTML, CSS and Sass, and JavaScript. Because this documentation is automatically updated, building and maintaining living, breathing style guides and pattern libraries is simple.</p>
+<h2 id="about-style-docs">About Style-Docs</h2>
+<p>Style-Docs trys to make as few assumptions as possible in regards to your front-end architecture. While it is setup up to integrate Sass, this too can be customized to incorporate another pre-processor or vanilla CSS. <a href="www.bower.io">Bower</a> integration makes managing dependencies simple. Integrating your own framework or project scaffolding only requires marking up your custom code with the appropriate comment syntax and then including the correct <a href="http://jinja.pocoo.org/">Jinja</a> template syntax to output your code snippet or rendered code where ever you want it displayed.</p>
 <h2 id="moving-parts">Moving parts</h2>
-<p>Dexy relies on Python, so you'll need that. You'll also need <a href="http://dexy.it">Dexy</a>. Screenshots are made using <a href="http://casperjs.org/">CasperJS</a> and <a href="http://phantomjs.org/">PhantomJS</a>, so those will have to be installed as well. You can use Dexy's Markdown filter for Markdown conversion, but I use <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a> for this demo. It's almost as awesome as Dexy.</p>
-<p>In addition, the syntax I use for marking blocks of CSS rely on Ana Nelson's <a href="https://bitbucket.org/ananelson/idiopidae-fork">idiopidae-fork</a>.</p>
+<p>There is a staggering amount of use cases that Dexy can satisfy and, therefore, quite a few moving parts.</p>
+<ul>
+<li><a href="http://jinja.pocoo.org/">Jinja</a> - The templating engine for Python which allows you to output you code any where you want using the appropriate filter.</li>
+<li><a href="http://www.dexy.it/filters/Htmlsections.html">htmlsections</a> - Dexy's HTML filter that allows you to split markup according to HTML comments</li>
+<li><a href="http://www.dexy.it/filters/Idio.html">idio</a> - Dexy filter to split document at comments that can be used with CSS, Sass, and JavaScript</li>
+<li><a href="http://johnmacfarlane.net/pandoc/">Pandoc</a> - A very powerful markup conversion utility that allows you to convert between markup language syntaxes.</li>
+<li><a href="http://phantomjs.org/">PhantomJS</a> - a headless WebKit scriptable with a JavaScript API and <a href="http://casperjs.org/">CasperJS</a> - a navigation scripting &amp; testing utility written in JavaScript for PhantomJS. These two utilities allow for scriptable screen shots of components that can include both state (ie hover and active) and context (screen deminsion).</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Dexy relies on Python, so you'll need that. Installation instructions for each utility can be found within their online documentation.</p>
+<p>To install Style-Docs, clone the repository and rename your root directory:</p>
+<pre><code>$ git clone https://github.com/kwaledesign/Style-Docs &lt;YOUR-PROJECT-NAME&gt;</code></pre>
+<p>Next, run the <code>style-docs-setup.sh</code> script to cleanup your install to automate the removal of unnecessary files, initialize Git, and then remove the setup-script when complete.</p>
+<p>If you are a <a href="http://zsh.sourceforge.net/">Zsh</a> user, you'll need to switch over to <code>bash</code> to run the script.</p>
+<pre><code>$ exec bash</code></pre>
+<p>Then run the setup script</p>
+<pre><code>$ . style-docs-setup.sh</code></pre>
+<p>Zsh users switch back to your preferred shell</p>
+<pre><code>$ exec zsh</code></pre>
+<p>You can now make your first commit</p>
+<pre><code>$ git commit -m &quot;init commit&quot;</code></pre>
+<p>You are now setup and ready to begin development on your project.</p>
+<h2 id="use">Use</h2>
+<p>If you are brand new to <a href="www.dexy.it">Dexy</a> I would highly recommend completing several of the <a href="http://www.dexy.it/guide/getting-started.html">tutorials</a> and familiarizing your self with <a href="http://www.dexy.it/guide/command-line-interface.html">Dexy's commands</a>. Once you wrap your head around how Dexy's filter system works along with several of the other moving parts used in our specific use case, it becomes pretty strait forward.</p>
+<p>Setup Dexy</p>
+<pre><code>$ Dexy setup</code></pre>
+<p>Run Dexy (optionally pass the -r flag which resets Dexy before running)</p>
+<pre><code>$ Dexy -r</code></pre>
+<p>Dexy will then run and if successful it will output your static site files into the <code>output-site</code> directory. If there were errors, Dexy will print those to the screen and also record them within the <code>log</code> directory.</p>
+<p>Dexy also has a built in server that runs on Python and is configured to symlink your generated site files into your root directory.</p>
+<p>To start a server run the following from your root directory</p>
+<pre><code>$ Dexy serve</code></pre>
+<p>Copy and paste the output URL into a browser to view your site files.</p>
+<h2 id="default-project-structure">Default Project Structure</h2>
+<p>Out of the box, Style-Docs includes several documents commonly used throughout the design phase of a responsive build. These of course won't fit every use case or project requirement, but they can easily be modified, removed, or supplemented in order to tailer fit to any specification. The project documents included by default are intended to steer the direction of a responsive build by providing finer grain detail at each stage of the process while building on the stage previous.</p>
+<h3 id="brand-guidelines">Brand Guidelines</h3>
+<p>Brand Guidelines, inspired by Dustin Curtis's <a href="http://dcurt.is/the-open-brand">Open Brand</a>, are used to develop brand definitions that can be used properly and referenced consistently by team members of any level of design experience.</p>
+<h3 id="cuti-report">CUTI Report</h3>
+<p>A &quot;Cuti&quot; report is a User Experience document that identifies a site's Content, Users (and user contexts), Tasks, and Interactions. User Experience methodologies can vary a great deal based on personal preference and project requirements, but they all boil down to a few fundamental definitions. The CUTI report summarizes these definitions in order to keep these findings front and center in order to allow for UX to steer the design and development process.</p>
+<h3 id="performance-budget">Performance Budget</h3>
+<h3 id="style-tile">Style Tile</h3>
+<p><a href="www.styletil.es">Style Tiles</a> are a design deliverable consisting of fonts, colors, and interface elements that communicate the essence of a visual brand for the web. They help form a common visual language between the designers and the stakeholders and provide a catalyst for discussions around the preferences and goals of the client. Style tiles establish a direct connection with actual interface elements without defining layout.</p>
+<h3 id="style-guide">Style Guide</h3>
+<p><a href="http://24ways.org/2011/front-end-style-guides/">Front-End Style Guides</a> are the visual guidelines for designing discrete web components. <a href="https://speakerdeck.com/jina/style-guide-driven-ui-design-with-sass">Style guide driven development</a> using <a href="https://speakerdeck.com/anotheruiguy/module-design-ui-dev-patterns">module design and UI patterns</a> integrates this methodology into the process, rather than simply documentation of an end product. This has enormous benefits in regards to testing and refining components and interactions to be self-contained, discrete, modules that can be rearranged and reorganized to fit different contexts. Early in the style guide development stage, it is often appropriate to use</p>
+<p><a href="http://phantomjs.org/">PhantomJS</a> and <a href="http://casperjs.org/">CasperJS</a> to automate screen shots of different contexts and state styles to present for client signoff. Stephen Hay refers to this as &quot;presentation psychology&quot; and it can greatly reduce development time by postponing much of the cross browser testing until after client signoff. At that point, images can be swapped out for live HTML and thorough browser and device testing can be completed. Similar to the Branding Guidelines document, the Style Guide clearly communicates interface and interaction standards to team members of any design/development knowledge.</p>
+<h3 id="pattern-library">Pattern Library</h3>
+<p>The Pattern Library is very similar to the Style Guide, the only difference being its intended audiance is the development team. This document is built directly on top of the Style Guide and includes template includes for the HTML, CSS, Sass, and JavaScript code that supplement the rendered HTML examples. This document is communicates not only how each component looks and behave but also the code necessary to consistently implement.</p>
+<h3 id="grid">Grid</h3>
+<p>One of the final steps in developing a design system is considering the layout for each of the major content types, components, and interactions for various user contexts. Stephan Hay refers to this stage of the process as &quot;breakpoint graphs&quot;. Understanding how each of the components responds at different contexts helps to identify the major breakpoints and also the minor &quot;tweak points&quot;. Both <a href="http://susy.oddbird.net/">Susy</a> and <a href="https://github.com/Team-Sass/Singularity">Singularity</a> have built in functions to display grid columns using css gradients. Whether you use one of these grid systems, or any other, or roll your own - displaying the layout mechanisms of your design visually helps not only for development and debugging but also serves as a valuable communication tool to describe how a design responds to various contexts to clients and stakeholders.</p>
+<h3 id="prototype">Prototype</h3>
+<p>The prototype phase is the final stage prior to integration with the backend platform. These can remain relatively low-fidelity or plugin design elements from the previous stages. At this stage of the process layouts can be thoroughly tested.</p>
+<h2 id="customize">Customize</h2>
+<p>Style-Docs can easily be customized to integrate any documentation requierments. The primary template pages are written in markdown so adding an additional page is as easy as creating a new named markdown file and adding Jinja include statements to pull in anything you want. Any unneeded pages can simply be deleted. To update navigation to reflect your changes, open up <code>_template.html</code> and make any necessary edits - just remember to link to the generated <code>.html</code> files, not the <code>.md</code> files directly.</p>
+<p>If you open up the <code>includes/</code> directory, you'll find both a <code>_header.html</code> and a <code>_footer.html</code>. These partials are used to build the header and footer for each page within your site. You may add any additional directories or files necessary to build out your Style-Docs however you want.</p>
 <h2 id="inspiration">Inspiration</h2>
 <ul>
-<li>Samantha Warren's <a href="http://styletil.es/">Style Tiles</a> and <a href="http://www.alistapart.com/articles/style-tiles-and-how-they-work/">A-List-Apart Article</a> -Anna Debenham's <a href="http://24ways.org/2011/front-end-style-guides/">front-end Style Guides</a></li>
+<li>Samantha Warren's <a href="http://styletil.es/">Style Tiles</a> and <a href="http://www.alistapart.com/articles/style-tiles-and-how-they-work/">A-List-Apart Article</a></li>
 <li>Stephen Hay's <a href="http://www.smashingconf.com">Smashing Conference</a> presentation <a href="https://speakerdeck.com/u/stephenhay/p/style-guides-are-the-new-photoshop-fronteers-2012">Style Guides Are The New Photoshop</a></li>
 <li>Dustin Curtis's <a href="http://dcurt.is/the-open-brand">Open Brand</a></li>
 </ul>
+<hr>
+<h3 id="license">License</h3>
+<p>© Kwale Design - Original source code dual licensed under <a href="http://www.opensource.org/licenses/mit-license.php">MIT license</a> / <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPL2 license</a>. Open-sourced projects used within this project retain their original licenses.</p>
 
   </div>
   
