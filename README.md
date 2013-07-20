@@ -1,6 +1,5 @@
 #Style-Docs
-
-A framework for building responsive design deliverables and styleguides in the browser.
+A framework for the rapid development of responsive design deliverables and designing in the browser powered by Dexy.
 
 ## About Dexy
 [Dexy](www.dexy.it) is an incredibly flexible documentation software built on Python that
