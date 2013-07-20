@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-#Style-Docs
-A framework for the rapid development of responsive design deliverables and designing in the browser powered by Dexy.
-=======
 # Style-Docs
 A framework for the rapid development of responsive design deliverables and designing in the browser powered by Dexy.
 
@@ -16,7 +12,6 @@ Style-Docs is a framework on which to develop responsive design deliverables
 highly influenced by [Stephen Hay's](https://twitter.com/stephenhay) excellent
 [responsive design
 workflow](http://www.amazon.com/Responsive-Design-Workflow-Stephen-Hay/dp/0321887867)
->>>>>>> dev
 
 ## About Dexy
 [Dexy](www.dexy.it) is an incredibly flexible documentation software built on Python that
