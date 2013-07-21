@@ -2,7 +2,7 @@
 
 <p class="lead">Performance is user experience.</p>
 
-Amazon's web team found that [100ms delay correlated into a 1% decrease in sales](http://www.websiteoptimization.com/speed/tweak/psychology-web-performance/). This is what makes the [1000ms time to glass](http://alistapart.com/blog/post/breaking-the-1000ms-time-to-glass-mobile-barrier) goal so vitally important and the idea of [setting a performance budget](http://timkadlec.com/2013/01/setting-a-performance-budget/) early in the project in an effort to [treat performance as an essential design feature](http://bradfrostweb.com/blog/post/performance-as-design/) throughout. Beyond following [best practices](http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/) as a developer, it is equally important to communicate the importance of performance and articulate the impact of every design decision has on the performance budget. Setting a performance budget early in the project life cycle is important because it is often the single most restrictive design restraint and, therefore, very hard to implement retroactively.  All graphic assets, design decisions, JavaScript interactions should be made while considering their implications on the performance budget.
+Amazon's web team found that [100ms delay correlated into a 1% decrease in sales](http://www.websiteoptimization.com/speed/tweak/psychology-web-performance/). This is what makes the [1000ms time to glass](http://alistapart.com/blog/post/breaking-the-1000ms-time-to-glass-mobile-barrier) goal so vitally important and the idea of [setting a performance budget](http://timkadlec.com/2013/01/setting-a-performance-budget/) early in the project in an effort to [treat performance as an essential design feature](http://bradfrostweb.com/blog/post/performance-as-design/) throughout. Beyond following [best practices](http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/) as a developer to avoid [bloated sites](http://browserdiet.com/), it is equally important to communicate the importance of performance and articulate the impact of every design decision has on the performance budget. Setting a performance budget early in the project life cycle is important because it is often the single most restrictive design restraint and, therefore, very hard to implement retroactively.  All graphic assets, design decisions, JavaScript interactions should be made while considering their implications on the performance budget.
 
 ## Performance Budget
 Example: 500kb limit per page and at least 1500ms load time on mobile.
@@ -28,4 +28,8 @@ List the images used in the design elements for each template (ie headers and ba
 
 ### JavaScript
 From a non-technical perspective, list the features or interactions requiering JavaScript and the weight of each script. Always use [progressive enhancement](http://jakearchibald.com/2013/progressive-enhancement-still-important/) when building dynamic interactions and make appoint to explain what this means for legacy browsers in the context of overall performance gains.
+
+
+<div id="performanceBudget"></div>
+
 

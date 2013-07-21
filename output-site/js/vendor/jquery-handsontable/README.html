@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Readme</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../css/screen.css" media="screen">
+    <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+</head>
+
+<body class="container">
+  
+  <header class="styleguide-header">
+      <h1>[project-name] Style Documents</h1>
+      
+    <nav class="global-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cuti.html">CUTI</a></li>
+        <li><a href="brandguidelines.html">Brand Guidelines</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="styletile.html">Style Tile</a></li>
+        <li><a href="styleguide.html">Style Guide</a></li>
+        <li><a href="patternlibrary.html">Pattern Library</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="prototype.html">Prototype</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  
+
+  <div class="page">
+    <h1 id="handsontable-build-status">Handsontable <a href="https://travis-ci.org/warpech/jquery-handsontable"><embed src="https://travis-ci.org/warpech/jquery-handsontable.png?branch=master" /></a></h1>
+<p>Handsontable is a minimalistic approach to Excel-like table editor in HTML &amp; jQuery. Requires jQuery 1.9+ or 2.0+ (may work with 1.7+ too, but there are known issues with <a href="https://github.com/warpech/jquery-handsontable/issues/410">IE10</a>).</p>
+<p>Runs in IE8, IE9, IE10, Firefox, Chrome, Safari and Opera.</p>
+<p>See the demos at http://handsontable.com/ or fork the example on <a href="http://jsfiddle.net/warpech/hU6Kz/">JSFiddle</a>.</p>
+<h2 id="usage">Usage</h2>
+<p>First, include all the dependencies. All the files that you need (apart from jQuery) are in the <code>dist\</code> directory:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;../lib/jquery.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+<span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;dist/jquery.handsontable.full.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+<span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> media=</span><span class="st">&quot;screen&quot;</span><span class="ot"> href=</span><span class="st">&quot;dist/jquery.handsontable.full.css&quot;</span><span class="kw">&gt;</span></code></pre>
+<p>Then, run <code>handsontable()</code> constructor on an empty div. After that, load some data if you wish:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;dataTable&quot;</span><span class="kw">&gt;&lt;/div&gt;</span>
+<span class="kw">&lt;script&gt;</span>
+  <span class="kw">var</span> data = [
+    [<span class="st">&quot;&quot;</span>, <span class="st">&quot;Kia&quot;</span>, <span class="st">&quot;Nissan&quot;</span>, <span class="st">&quot;Toyota&quot;</span>, <span class="st">&quot;Honda&quot;</span>],
+    [<span class="st">&quot;2008&quot;</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>],
+    [<span class="st">&quot;2009&quot;</span>, <span class="dv">20</span>, <span class="dv">11</span>, <span class="dv">14</span>, <span class="dv">13</span>],
+    [<span class="st">&quot;2010&quot;</span>, <span class="dv">30</span>, <span class="dv">15</span>, <span class="dv">12</span>, <span class="dv">13</span>]
+  ];
+<span class="er">  $(&quot;#dataTable&quot;).handsontable({</span>
+    data: data,
+    startRows: <span class="dv">6</span>,
+    startCols: <span class="dv">8</span>
+<span class="er">  });</span>
+&lt;<span class="ot">/script&gt;</span></code></pre>
+<h2 id="api-reference">API Reference</h2>
+<p>Check out the new wiki pages: <a href="https://github.com/warpech/jquery-handsontable/wiki/Options">Options</a>, <a href="https://github.com/warpech/jquery-handsontable/wiki/Methods">Methods</a> and <a href="https://github.com/warpech/jquery-handsontable/wiki/Events">Events</a></p>
+<h2 id="changelog">Changelog</h2>
+<p>To see the list of recent changes, see the <a href="./CHANGELOG.md">CHANGELOG.md</a>.</p>
+<h2 id="questions">Questions</h2>
+<p>Please use the :new: <a href="https://groups.google.com/forum/?fromgroups=#!forum/handsontable">Handsontable Google Group</a> for posting general <strong>Questions</strong>.</p>
+<p>Make sure the question was not answered before in <a href="https://github.com/warpech/jquery-handsontable/wiki/FAQ">FAQ</a> or <a href="https://github.com/warpech/jquery-handsontable/issues">GitHub Issues</a></p>
+<h2 id="reporting-bugs-and-feature-requests">Reporting bugs and feature requests</h2>
+<p>Please follow this guidelines when reporting bugs and feature requests:</p>
+<ol type="1">
+<li>Use <a href="https://github.com/warpech/jquery-handsontable/issues">GitHub Issues</a> board to report bugs and feature requests (not my email address)</li>
+<li>Please <strong>always</strong> write steps to reporoduce the error. That way I can focus on fixing the bug, not scratching my had how to reproduce it.</li>
+<li>If possible, please add a JSFiddle link that shows the problem (start by forking <a href="http://jsfiddle.net/warpech/hU6Kz/">this fiddle</a>). It saves me much time.</li>
+<li>If you can't reproduce it on JSFiddle, please add a screenshot that shows the problem. JSFiddle is much more appreciated because it lets me start fixing straight away.</li>
+</ol>
+<p>Thanks for understanding!</p>
+<h2 id="contributing">Contributing</h2>
+<p>Please see <a href="CONTRIBUTING.md">CONTRIBUTING.md</a></p>
+<h2 id="similar-projects">Similar projects</h2>
+<p>I want to stay motivated to keep Handsontable the best possible editable datagrid on the Web. Therefore, I invite you to check out alternative projects. I would love to receive feedback if you would like to import some of their features to Handsontable.</p>
+<ul>
+<li><a href="http://datatables.net/">DataTables</a></li>
+<li><a href="https://github.com/mleibman/SlickGrid">SlickGrid</a></li>
+<li><a href="http://www.trirand.com/blog/">jqGrid</a></li>
+<li><a href="http://www.jtable.org/">jTable</a></li>
+<li><a href="http://www.pontikis.net/labs/jui_datagrid/">jui_datagrid</a></li>
+<li><a href="http://paramquery.com/">ParamQuery</a></li>
+<li><a href="http://addepar.github.io/ember-table/">Ember Table</a></li>
+<li><a href="http://backgridjs.com/">Backgrid.js</a></li>
+<li><a href="http://dojofoundation.org/packages/dgrid/">dgrid</a></li>
+</ul>
+<h2 id="license">License</h2>
+<p>(The MIT License)</p>
+<p>Copyright (c) 2012 Marcin Warpechowski &lt;marcin@nextgen.pl&gt;</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+  </div>
+  
+  <footer class="styleguide-footer">
+  <p>Styleguide Footer Goes Here</p>
+</footer>
+
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery.min.js"><\/script>')</script>
+-->
+
+<script src="bower_components/jquery/jquery.min.js"></script>
+<script src="js/vendor/jquery-handsontable/dist/jquery.handsontable.full.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+</body>
+</html>
+ 

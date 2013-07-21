@@ -42,11 +42,11 @@
 Performance is user experience.
 </p>
 
-<p>Amazon's web team found that <a href="http://www.websiteoptimization.com/speed/tweak/psychology-web-performance/">100ms delay correlated into a 1% decrease in sales</a>. This is what makes the <a href="http://alistapart.com/blog/post/breaking-the-1000ms-time-to-glass-mobile-barrier">1000ms time to glass</a> goal so vitally important and the idea of <a href="http://timkadlec.com/2013/01/setting-a-performance-budget/">setting a performance budget</a> early in the project in an effort to <a href="http://bradfrostweb.com/blog/post/performance-as-design/">treat performance as an essential design feature</a> throughout. Beyond following <a href="http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/">best practices</a> as a developer, it is equally important to communicate the importance of performance and articulate the impact of every design decision has on the perforance budget. Setting a performance budget early in the project life cycle is important because it is often the single most restrictive design restraint and, therefore, very hard to impliment retroactively. All graphic assets, design decisions, JavaScript interactions should be made while considering their implications on the performance budget.</p>
+<p>Amazon's web team found that <a href="http://www.websiteoptimization.com/speed/tweak/psychology-web-performance/">100ms delay correlated into a 1% decrease in sales</a>. This is what makes the <a href="http://alistapart.com/blog/post/breaking-the-1000ms-time-to-glass-mobile-barrier">1000ms time to glass</a> goal so vitally important and the idea of <a href="http://timkadlec.com/2013/01/setting-a-performance-budget/">setting a performance budget</a> early in the project in an effort to <a href="http://bradfrostweb.com/blog/post/performance-as-design/">treat performance as an essential design feature</a> throughout. Beyond following <a href="http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/">best practices</a> as a developer to avoid <a href="http://browserdiet.com/">bloated sites</a>, it is equally important to communicate the importance of performance and articulate the impact of every design decision has on the performance budget. Setting a performance budget early in the project life cycle is important because it is often the single most restrictive design restraint and, therefore, very hard to implement retroactively. All graphic assets, design decisions, JavaScript interactions should be made while considering their implications on the performance budget.</p>
 <h2 id="performance-budget">Performance Budget</h2>
 <p>Example: 500kb limit per page and at least 1500ms load time on mobile.</p>
 <h3 id="feature-evaluation">Feature Evaluation</h3>
-<p>When considering adding a design feature to a site that will exceed the net perforance budget, proceed with one of the following:</p>
+<p>When considering adding a design feature to a site that will exceed the net performance budget, proceed with one of the following:</p>
 <ol type="1">
 <li><p>Optimize an existing feature or asset on the page.</p></li>
 <li><p>Remove an existing feature or asset from the page.</p></li>
@@ -61,6 +61,10 @@ Performance is user experience.
 <p>List the images used in the design elements for each template (ie headers and background images). List the sizes of the largest assets here and optimize once major breakpoints are identified. List the images for each content type. Optimize sizes after major breakpoints are identified.</p>
 <h3 id="javascript">JavaScript</h3>
 <p>From a non-technical perspective, list the features or interactions requiering JavaScript and the weight of each script. Always use <a href="http://jakearchibald.com/2013/progressive-enhancement-still-important/">progressive enhancement</a> when building dynamic interactions and make appoint to explain what this means for legacy browsers in the context of overall performance gains.</p>
+<div id="performanceBudget"></div>
+
+
+
 
   </div>
   
@@ -68,10 +72,14 @@ Performance is user experience.
   <p>Styleguide Footer Goes Here</p>
 </footer>
 
+<!--
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery.min.js"><\/script>')</script>
-<script src="js/main.js"></script>
+-->
 
+<script src="bower_components/jquery/jquery.min.js"></script>
+<script src="js/vendor/jquery-handsontable/dist/jquery.handsontable.full.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
 </body>
