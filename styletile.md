@@ -1,19 +1,16 @@
 # Style Tile
 
+## Typography Pallet
 {{ (d['components/styletile.html|htmlsections']['typography']) }}
 
-<div class="graphical-elements">
-  <section class="color-pallet">
-    ## Color Pallet
-    {{ (d['components/color-pallet.html|htmlsections']['color-stack']) }}
-    {{ (d['components/color-pallet.html|htmlsections']['tint-stack']) }}
-    {{ (d['components/color-pallet.html|htmlsections']['tone-stack']) }}
-    {{ (d['components/color-pallet.html|htmlsections']['shade-stack']) }}
-    {{ (d['components/color-pallet.html|htmlsections']['textures']) }}
-</div>
+## Color Pallet
+{{ (d['components/color-pallet.html|htmlsections']['color-stack']) }}
+{{ (d['components/color-pallet.html|htmlsections']['tint-stack']) }}
+{{ (d['components/color-pallet.html|htmlsections']['tone-stack']) }}
+{{ (d['components/color-pallet.html|htmlsections']['shade-stack']) }}
+{{ (d['components/color-pallet.html|htmlsections']['textures']) }}
 
-## Gradients
-
+## Design Objectives
 <div class="design-objectives">
   <h3 class="section-heading">Company Mission Statement</h3>
   <p>Template this from Brand Guidelines</p>
@@ -43,4 +40,4 @@
     <p>Dolor</p>
   </section>
 </section>
- 
+
