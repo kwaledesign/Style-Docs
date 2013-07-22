@@ -10,6 +10,242 @@
  */
 /*Pygment variables*/
 /**
+ * Layout
+ * 
+ */
+/**
+ * Grid
+ * 
+ */
+/**
+ * grid variables
+ */
+/**
+ * Grid Rows and Units
+ */
+/* line 21, ../sass/style-docs/_navigation.scss */
+.header, .container {
+  *zoom: 1;
+  padding: 0 25px;
+  margin-bottom: 0;
+}
+/* line 38, ../../../../../Users/Sam/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.header:after, .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 27, ../sass/style-docs/_navigation.scss */
+.main-nav, .nav--slide, .page {
+  float: left;
+  padding: 10px 0 10px 10px;
+}
+/* line 30, ../sass/style-docs/_navigation.scss */
+.main-nav:last-of-type, .nav--slide:last-of-type, .page:last-of-type {
+  padding-right: 0;
+}
+
+/**
+ * Widths
+ * 
+ * Intrisic and proportional widths to be extended to a grid object
+ *
+ */
+/**
+ * Intrinsic widths
+ * 
+ */
+/**
+ * Fit Children
+ *
+ * Make an element shrink wrap its content.
+ */
+/**
+ * Fit Parent
+ *
+ * Make an element the width of its parent.
+ */
+/**
+ * Make an element fill the remaining space.
+ * 
+ * Note: This will hide overflow.
+ */
+/**
+ * Proportional widths
+ * 
+ * Grid unit extenders - specify the proportional width of a grid unit
+ */
+/* line 91, ../sass/style-docs/_navigation.scss */
+.size1of1, .main-nav, .page {
+  width: 100%;
+}
+
+/* line 96, ../sass/style-docs/_navigation.scss */
+.size1of2, .size2of4, .size3of6, .size4of8 {
+  width: 50%;
+}
+
+/* line 100, ../sass/style-docs/_navigation.scss */
+.size1of3, .size2of6 {
+  width: 33.33333%;
+}
+
+/* line 103, ../sass/style-docs/_navigation.scss */
+.size1of4, .size2of8 {
+  width: 25%;
+}
+
+/* line 105, ../sass/style-docs/_navigation.scss */
+.size1of5, .nav--slide {
+  width: 20%;
+}
+
+/* line 107, ../sass/style-docs/_navigation.scss */
+.size1of6 {
+  width: 16.6666666%;
+}
+
+/* line 108, ../sass/style-docs/_navigation.scss */
+.size1of7 {
+  width: 14.2857143%;
+}
+
+/* line 109, ../sass/style-docs/_navigation.scss */
+.size1of8, .size1of7 {
+  width: 12.5%;
+}
+
+/* line 114, ../sass/style-docs/_navigation.scss */
+.size2of3, .size4of6 {
+  width: 66.66666%;
+}
+
+/* line 115, ../sass/style-docs/_navigation.scss */
+.size2of5 {
+  width: 40%;
+}
+
+/* line 116, ../sass/style-docs/_navigation.scss */
+.size2of7 {
+  width: 28.5714286%;
+}
+
+/* line 119, ../sass/style-docs/_navigation.scss */
+.size3of4, .size6of8 {
+  width: 75%;
+}
+
+/* line 120, ../sass/style-docs/_navigation.scss */
+.size3of5 {
+  width: 60%;
+}
+
+/* line 121, ../sass/style-docs/_navigation.scss */
+.size3of7 {
+  width: 42.8571429%;
+}
+
+/* line 122, ../sass/style-docs/_navigation.scss */
+.size3of8 {
+  width: 37.5%;
+}
+
+/* line 125, ../sass/style-docs/_navigation.scss */
+.size4of5, .page.is-slide {
+  width: 80%;
+}
+
+/* line 126, ../sass/style-docs/_navigation.scss */
+.size4of7 {
+  width: 57.1428572%;
+}
+
+/* line 129, ../sass/style-docs/_navigation.scss */
+.size5of6 {
+  width: 83.3333333%;
+}
+
+/* line 130, ../sass/style-docs/_navigation.scss */
+.size5of7 {
+  width: 71.4285715%;
+}
+
+/* line 131, ../sass/style-docs/_navigation.scss */
+.size5of8 {
+  width: 62.5%;
+}
+
+/* line 134, ../sass/style-docs/_navigation.scss */
+.size6of7 {
+  width: 85.7142858%;
+}
+
+/* line 137, ../sass/style-docs/_navigation.scss */
+.size7of8 {
+  width: 87.5%;
+}
+
+/* Demo classes */
+/**
+ * Header
+ */
+/* line 188, ../sass/style-docs/_navigation.scss */
+.main-nav {
+  background: #666666;
+}
+
+/**
+ * Body
+ */
+/** 
+ * Navigation
+ */
+/* nav object */
+/* line 208, ../sass/style-docs/_navigation.scss */
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  *zoom: 1;
+}
+/* line 38, ../../../../../Users/Sam/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 213, ../sass/style-docs/_navigation.scss */
+.nav > li > a {
+  display: inline-block;
+}
+
+/* line 218, ../sass/style-docs/_navigation.scss */
+.nav--slide {
+  margin-left: -100%;
+  background: #E5E5E5;
+}
+
+/* line 224, ../sass/style-docs/_navigation.scss */
+.nav--slide.is-active {
+  margin-left: 0;
+  margin-top: 1em;
+}
+
+/* line 229, ../sass/style-docs/_navigation.scss */
+.menu-link {
+  color: green;
+}
+
+/* line 230, ../sass/style-docs/_navigation.scss */
+.menu-link.is-active {
+  color: red;
+}
+
+/**
+ * Main Section
+ */
+/**
  * Grid
  * 
  */
@@ -67,7 +303,7 @@
 /*.unit {margin-right: 10px;}*/
 /*.lastUnit {margin-right: 0;}*/
 /* line 40, ../sass/style-docs/_grid.scss */
-.size1of1 {
+.size1of1, .main-nav, .page {
   float: none;
 }
 
@@ -87,7 +323,7 @@
 }
 
 /* line 44, ../sass/style-docs/_grid.scss */
-.size1of5 {
+.size1of5, .nav--slide {
   width: 20%;
 }
 
@@ -96,8 +332,13 @@
   width: 16.6666666%;
 }
 
-/* line 47, ../sass/style-docs/_grid.scss */
+/* line 46, ../sass/style-docs/_grid.scss */
 .size1of7 {
+  width: 14.2857143%;
+}
+
+/* line 47, ../sass/style-docs/_grid.scss */
+.size1of8, .size1of7 {
   width: 12.5%;
 }
 
@@ -137,7 +378,7 @@
 }
 
 /* line 62, ../sass/style-docs/_grid.scss */
-.size4of5 {
+.size4of5, .page.is-slide {
   width: 80%;
 }
 
