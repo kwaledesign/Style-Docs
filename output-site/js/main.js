@@ -1,5 +1,5 @@
 (function() {
-
+  
   // handsontable script for performance page
   var data = [
     ["Logo", 112, 1, "branding"],
@@ -32,3 +32,4 @@
   });
 
 })();
+
