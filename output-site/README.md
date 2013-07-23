@@ -119,6 +119,8 @@ $ Dexy serve
 Copy and paste the output URL into a browser to view your site files.
 
 
+***
+# Anatomy of an Idiomatic Design System
 
 ## Default Project Structure
 Out of the box, Style-Docs includes several documents commonly used throughout the design phase of a responsive build.  These of course won't fit every use case or project requirement, but they can easily be modified, removed, or supplemented in order to tailer fit to any specification. The project documents included by default are intended to steer the direction of a responsive build by providing finer grain detail at each stage of the process while building on the stage previous.
