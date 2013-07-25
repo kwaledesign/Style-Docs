@@ -1,3 +1,5 @@
+<div class="copy">
+
 # Styleguide
 
 # Button Image:
@@ -10,3 +12,4 @@ After sign off, screen shots will of course be replaced with live, tested code e
 
 {{ (d['components/sections.html|htmlsections']['buttons']) }}
 
+</div>

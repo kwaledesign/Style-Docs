@@ -1,3 +1,5 @@
+<div class="copy">
+
 # Performance
 
 <p class="lead">Performance is user experience.</p>
@@ -43,3 +45,4 @@ For redesign projects, an accurate analysis of the site's current performance he
   * Google Chrome Dev Tools
 
 
+</div>
