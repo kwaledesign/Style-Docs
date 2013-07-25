@@ -1,3 +1,5 @@
+<div class="copy">
+
 # Style Tile
 
 ## Typography Pallet
@@ -41,3 +43,4 @@
   </section>
 </section>
 
+</div>

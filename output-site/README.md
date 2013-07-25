@@ -1,7 +1,7 @@
 
 # Style-Docs
 
-A framework for the rapid development of responsive design deliverables and designing in the browser powered by Dexy.
+<p class="lead">A framework for the rapid development of responsive design deliverables and style guide driven development in the browser.</p>
 
 > “The way we publish on the web is mostly derived from what we know about putting ink on paper. The future of content is in smaller discrete objects that can be assembled into new containers.” - [Karen McGrane](https://twitter.com/karenmcgrane) 
 
@@ -10,8 +10,9 @@ first](http://www.lukew.com/ff/entry.asp?933) sites and applications requires
 the adoption of more [modern workflows](https://speakerdeck.com/u/stephenhay/p/style-guides-are-the-new-photoshop-fronteers-2012) to accommodate for the [fluid
 nature](http://alistapart.com/article/dao) of
 [responsive design](http://www.abookapart.com/products/responsive-web-design).
-Style-Docs is a framework on which to develop responsive design deliverables
-highly influenced by [Stephen Hay's](https://twitter.com/stephenhay) excellent
+Style-Docs is a framework for [style guide driven
+devlopment](https://speakerdeck.com/jina/style-guide-driven-ui-design-with-sass)
+using responsive design deliverables highly influenced by [Stephen Hay's](https://twitter.com/stephenhay) excellent
 [responsive design
 workflow](http://www.amazon.com/Responsive-Design-Workflow-Stephen-Hay/dp/0321887867)
 
@@ -121,8 +122,6 @@ Copy and paste the output URL into a browser to view your site files.
 
 ***
 # Anatomy of an Idiomatic Design System
-
-## Default Project Structure
 Out of the box, Style-Docs includes several documents commonly used throughout the design phase of a responsive build.  These of course won't fit every use case or project requirement, but they can easily be modified, removed, or supplemented in order to tailer fit to any specification. The project documents included by default are intended to steer the direction of a responsive build by providing finer grain detail at each stage of the process while building on the stage previous.
 
 ### Brand Guidelines

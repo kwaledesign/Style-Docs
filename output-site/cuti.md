@@ -1,3 +1,5 @@
+<div class="copy">
+
 # C.U.T.I. Report
 A "Cuti" report is a User Experience document that identifies a site's Content, Users (and user contexts), Tasks, and Interactions. User Experience methodoligies can vary a great deal based on personal preference and project requierments, but they all boil down to a few fundamental definitions. The CUTI report summarizes these definitions in order to keep these findings front and center in order to allow for UX to steer the design and development process.
 
@@ -19,7 +21,7 @@ Goal: Identify high quality, high relevant content from the user's perspective.
 Also consider content contributers
   * writting for the web
   * rollout calendar
-  * oversight / editorial control (voice and tone)
+  * oversight / editorial control ([voice and tone](http://voiceandtone.com/))
 
   3. Alignment 
     * Govern
@@ -43,7 +45,6 @@ Content better serves end users and becomes an asset rather than a commodity.
 
 ## Users and User Contexts
 
-### Users
 Define users along with user hierarchy of needs within the context of interacting with site content. Represent this information in a specific user interaction with site content in a way that informs the actual build/implementation. 
 
 ## User Tasks
@@ -71,4 +72,4 @@ Identify pre-existing processes and interaction points.  Look for steps that can
 Must first identify the data and understand all the use cases for the data and the potential actions users might need to take.  Without understanding the process, you cannot design the interface.
 
 
-
+</div>

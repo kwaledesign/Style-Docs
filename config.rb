@@ -5,8 +5,8 @@
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 preferred_syntax = :scss
 
-require 'archetype'
 require 'colorkit'
+require 'archetype'
 require 'modular-scale'
 require 'breakpoint'
 require 'singularitygs'
@@ -30,5 +30,5 @@ relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false
-color_output = false
+color_output = true
 

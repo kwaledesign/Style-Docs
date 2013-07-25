@@ -1,3 +1,5 @@
+<div class="copy">
+
 # Prototype
 
 Link to live wireframe prototype
@@ -6,4 +8,4 @@ Link to live wireframe prototype
   annotation Jinja include goes here
 </div>   
 
-
+</div>
