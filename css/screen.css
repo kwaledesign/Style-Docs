@@ -4747,3 +4747,126 @@ pre {
 .texture-swatch-3 {
   background: white;
 }
+
+/**
+ * Content Reference Wireframe
+ * 
+ */
+/**
+ * Wireframe Layout
+ */
+/* line 19, ../sass/style-docs/_content-reference-wireframe.scss */
+.wireframe {
+  background-image: -webkit-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 100%);
+  background-image: -moz-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 100%);
+}
+@media (min-width: 45em) {
+  /* line 19, ../sass/style-docs/_content-reference-wireframe.scss */
+  .wireframe {
+    background-image: -webkit-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 19.23077%, rgba(210, 105, 30, 0.25) 19.23077%, rgba(210, 105, 30, 0.25) 23.07692%, rgba(210, 105, 30, 0.5) 23.07692%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 103.84615%);
+    background-image: -moz-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 19.23077%, rgba(210, 105, 30, 0.25) 19.23077%, rgba(210, 105, 30, 0.25) 23.07692%, rgba(210, 105, 30, 0.5) 23.07692%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 103.84615%);
+    background-image: -o-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 19.23077%, rgba(210, 105, 30, 0.25) 19.23077%, rgba(210, 105, 30, 0.25) 23.07692%, rgba(210, 105, 30, 0.5) 23.07692%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 103.84615%);
+    background-image: linear-gradient(to right, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 19.23077%, rgba(210, 105, 30, 0.25) 19.23077%, rgba(210, 105, 30, 0.25) 23.07692%, rgba(210, 105, 30, 0.5) 23.07692%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 103.84615%);
+  }
+}
+@media (min-width: 65em) {
+  /* line 19, ../sass/style-docs/_content-reference-wireframe.scss */
+  .wireframe {
+    background-image: -webkit-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 15.625%, rgba(210, 105, 30, 0.25) 15.625%, rgba(210, 105, 30, 0.25) 18.75%, rgba(210, 105, 30, 0.5) 18.75%, rgba(210, 105, 30, 0.5) 81.25%, rgba(210, 105, 30, 0.25) 81.25%, rgba(210, 105, 30, 0.25) 84.375%, rgba(210, 105, 30, 0.5) 84.375%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 103.125%);
+    background-image: -moz-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 15.625%, rgba(210, 105, 30, 0.25) 15.625%, rgba(210, 105, 30, 0.25) 18.75%, rgba(210, 105, 30, 0.5) 18.75%, rgba(210, 105, 30, 0.5) 81.25%, rgba(210, 105, 30, 0.25) 81.25%, rgba(210, 105, 30, 0.25) 84.375%, rgba(210, 105, 30, 0.5) 84.375%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 103.125%);
+    background-image: -o-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 15.625%, rgba(210, 105, 30, 0.25) 15.625%, rgba(210, 105, 30, 0.25) 18.75%, rgba(210, 105, 30, 0.5) 18.75%, rgba(210, 105, 30, 0.5) 81.25%, rgba(210, 105, 30, 0.25) 81.25%, rgba(210, 105, 30, 0.25) 84.375%, rgba(210, 105, 30, 0.5) 84.375%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 103.125%);
+    background-image: linear-gradient(to right, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 15.625%, rgba(210, 105, 30, 0.25) 15.625%, rgba(210, 105, 30, 0.25) 18.75%, rgba(210, 105, 30, 0.5) 18.75%, rgba(210, 105, 30, 0.5) 81.25%, rgba(210, 105, 30, 0.25) 81.25%, rgba(210, 105, 30, 0.25) 84.375%, rgba(210, 105, 30, 0.5) 84.375%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 103.125%);
+  }
+}
+/* line 22, ../sass/style-docs/_content-reference-wireframe.scss */
+.wireframe .block--structure {
+  padding: 1em;
+  margin: .5em;
+  border: 1px solid;
+}
+/* line 27, ../sass/style-docs/_content-reference-wireframe.scss */
+.wireframe .block--skin {
+  border-color: #999999;
+  background-color: #b3b3b3;
+  text-align: center;
+}
+/* line 33, ../sass/style-docs/_content-reference-wireframe.scss */
+.wireframe .header {
+  width: 340%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+}
+/* line 36, ../sass/style-docs/_content-reference-wireframe.scss */
+.wireframe .navigation {
+  width: 340%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+}
+/* line 39, ../sass/style-docs/_content-reference-wireframe.scss */
+.wireframe .main-content {
+  width: 340%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+}
+@media (min-width: 45em) {
+  /* line 39, ../sass/style-docs/_content-reference-wireframe.scss */
+  .wireframe .main-content {
+    width: 76.92308%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+/* line 45, ../sass/style-docs/_content-reference-wireframe.scss */
+.wireframe .primary-side-bar {
+  width: 340%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+}
+@media (min-width: 45em) {
+  /* line 45, ../sass/style-docs/_content-reference-wireframe.scss */
+  .wireframe .primary-side-bar {
+    width: 19.23077%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+}
+/* line 51, ../sass/style-docs/_content-reference-wireframe.scss */
+.wireframe .secondary-side-bar {
+  width: 340%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+}
+@media (min-width: 65em) {
+  /* line 51, ../sass/style-docs/_content-reference-wireframe.scss */
+  .wireframe .secondary-side-bar {
+    width: 15.625%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+/* line 58, ../sass/style-docs/_content-reference-wireframe.scss */
+.wireframe .footer {
+  width: 340%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+}
