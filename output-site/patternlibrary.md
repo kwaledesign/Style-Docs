@@ -12,7 +12,6 @@ The pattern library includes all the components defined within the styleguide, i
 {{ d['sass/style-docs/_components.scss|idio']['sass-header'] }}
 
 # Button CSS:
-{{ d['demo/style.css|idio']['buttons'] }}
 
 # Buttons:
 {{ (d['components/sections.html|htmlsections']['buttons']) }}
