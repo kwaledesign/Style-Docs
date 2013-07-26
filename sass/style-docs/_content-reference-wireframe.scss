@@ -1,0 +1,62 @@
+/**
+ * Content Reference Wireframe
+ * 
+ */
+
+
+/**
+ * Wireframe Layout
+ */
+@import "singularitygs";
+$breakpoint-to-ems: true;
+$bp1: 45em;
+$bp2: 65em;
+$grids: 1;
+$grids: add-grid(1 4 at $bp1);
+$grids: add-grid(1 4 1 at $bp2);
+$gutters: .2;
+
+.wireframe {
+  @include background-grid;
+  
+  .block--structure {
+    padding: 1em;
+    margin: .5em;
+    border: 1px solid;
+  }
+  .block--skin {
+    border-color: $subtle;
+    background-color: $muted;
+    text-align: center;
+  }
+  
+  .header { 
+    @include grid-span(3, 1);
+  }
+  .navigation { 
+    @include grid-span(3, 1);
+  }
+  .main-content {
+    @include grid-span(3, 1);
+    @include breakpoint($bp1) {
+      @include grid-span(1, 2); 
+    }
+  }
+  .primary-side-bar {
+    @include grid-span(3, 1);
+    @include breakpoint($bp1) {
+      @include grid-span(1, 1); 
+    }
+  }
+  .secondary-side-bar {
+    @include grid-span(3, 1);
+    @include breakpoint($bp2) {
+      @include grid-span(1, 3); 
+    } 
+  }
+  
+  .footer {
+    @include grid-span(3, 1);
+  }
+
+}
