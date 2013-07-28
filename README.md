@@ -16,6 +16,7 @@ using responsive design deliverables highly influenced by [Stephen Hay's](https:
 [responsive design
 workflow](http://www.amazon.com/Responsive-Design-Workflow-Stephen-Hay/dp/0321887867)
 
+
 ## About Dexy
 [Dexy](www.dexy.it) is an incredibly flexible documentation software built on Python that
 uses numerous filter plugins to allow for the use of live code examples to be
@@ -122,7 +123,14 @@ Copy and paste the output URL into a browser to view your site files.
 
 ***
 # Anatomy of an Idiomatic Design System
+
+>"It’s time for us to shed the vestigial mindsets we’ve inherited from the advertising world— the closed communications and drama of the “big reveal” — and build new systems based on honesty, inclusion, and genuine communication. We can bring our clients into the process right away letting them see all the flaws and bumps along the way. Through this relationship they will become true partners — rather than confused, anxious bystanders — as we learn to better navigate this strange, evolving digital universe together." - [Matt Griffin](http://alistapart.com/article/client-relationships-and-the-multi-device-web)
+
 Out of the box, Style-Docs includes several documents commonly used throughout the design phase of a responsive build.  These of course won't fit every use case or project requirement, but they can easily be modified, removed, or supplemented in order to tailer fit to any specification. The project documents included by default are intended to steer the direction of a responsive build by providing finer grain detail at each stage of the process while building on the stage previous.
+
+The granularity of your client’s feedback should match the level of detail of
+the deliverable they’re looking at. So lo-fi visuals get lo-fi feedback and
+sign-off.
 
 ### Brand Guidelines
 Brand Guidelines, inspired by Dustin Curtis's [Open Brand](http://dcurt.is/the-open-brand), are used to develop brand definitions that can be used properly and referenced consistently by team members of any level of design experience.
