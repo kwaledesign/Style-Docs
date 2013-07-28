@@ -128,6 +128,10 @@ Copy and paste the output URL into a browser to view your site files.
 
 Out of the box, Style-Docs includes several documents commonly used throughout the design phase of a responsive build.  These of course won't fit every use case or project requirement, but they can easily be modified, removed, or supplemented in order to tailer fit to any specification. The project documents included by default are intended to steer the direction of a responsive build by providing finer grain detail at each stage of the process while building on the stage previous.
 
+The granularity of your client’s feedback should match the level of detail of
+the deliverable they’re looking at. So lo-fi visuals get lo-fi feedback and
+sign-off.
+
 ### Brand Guidelines
 Brand Guidelines, inspired by Dustin Curtis's [Open Brand](http://dcurt.is/the-open-brand), are used to develop brand definitions that can be used properly and referenced consistently by team members of any level of design experience.
 
