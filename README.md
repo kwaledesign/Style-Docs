@@ -9,7 +9,11 @@ Developing [future friendly](http://futurefriend.ly/), [mobile
 first](http://www.lukew.com/ff/entry.asp?933) sites and applications requires
 the adoption of more [modern workflows](https://speakerdeck.com/u/stephenhay/p/style-guides-are-the-new-photoshop-fronteers-2012) to accommodate for the [fluid
 nature](http://alistapart.com/article/dao) of
-[responsive design](http://www.abookapart.com/products/responsive-web-design).
+[responsive design](http://www.abookapart.com/products/responsive-web-design)
+and wide browser support for the [ever growing number of
+devices](http://opensignal.com/reports/fragmentation-2013/) through the use of
+[progressive
+enhancement](http://jakearchibald.com/2013/progressive-enhancement-still-important/).
 Style-Docs is a framework for [style guide driven
 devlopment](https://speakerdeck.com/jina/style-guide-driven-ui-design-with-sass)
 using responsive design deliverables highly influenced by [Stephen Hay's](https://twitter.com/stephenhay) excellent
