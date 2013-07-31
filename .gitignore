@@ -2,4 +2,4 @@
 .cache/
 logs/
 .sass-chache/
-
+node_modules/
