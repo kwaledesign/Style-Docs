@@ -4959,3 +4959,17 @@ pre {
     margin-right: 0%;
   }
 }
+
+/**
+ * Temporary Styles
+ *
+ * Styles that don't yet have a home within the project architecture
+ */
+/**
+ * Fix <code> elements nested within <pre>
+ */
+/* line 11, ../sass/style-docs/_temp.scss */
+pre {
+  border: none;
+  margin: 0;
+}
