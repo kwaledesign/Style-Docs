@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Readme</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../css/screen.css" media="screen">
+    <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+</head>
+
+<body class="container">
+  
+  <header class="styleguide-header">
+      <h1>[project-name] Style Documents</h1>
+      
+    <nav class="global-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="specification.html">Specification Document</a></li>
+        <li><a href="brandguidelines.html">Brand Guidelines</a></li>
+        <li><a href="cuti.html">CUTI</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="structured-content.html">Structured Content</a></li>
+        <li><a href="styletile.html">Style Tile</a></li>
+        <li><a href="styleguide.html">Style Guide</a></li>
+        <li><a href="patternlibrary.html">Pattern Library</a></li>
+        <li><a href="wireframe.html">Wireframe</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="prototype.html">Prototype</a></li>
+        <li><a href="#" class="annotation-link">Annotations</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  
+
+  <div class="page">
+    <h1 id="requirejs-dist">RequireJS dist</h1>
+<p>This directory contains the tools that are used to build distributions of RequireJS and its web site.</p>
+<p>When doing a release, do the following:</p>
+<ul>
+<li>Update files to the new version number:
+<ul>
+<li>require.js, both places</li>
+<li>docs/download.md: check for nested paths too, add new release section</li>
+<li>pre.html</li>
+<li>post.html</li>
+</ul></li>
+<li>Update version in x.js in the r.js project if necessary.</li>
+<li>.updatesubs.sh</li>
+<li>Check in changes to r.js project.</li>
+<li>Check in changes to sample projects:</li>
+<li>requirejs/example-jquery-cdn</li>
+<li>requirejs/example-jquery-shim</li>
+<li>requirejs/example-multipage</li>
+<li>requirejs/example-multipage-shim</li>
+<li>requirejs/example-libglobal</li>
+<li>volojs/create-template</li>
+<li><p>volojs/create-responsive-template</p></li>
+<li>Tag the requirejs and r.js trees:
+<ul>
+<li>git tag -am &quot;Release 0.0.0&quot; 0.0.0</li>
+<li>git push --tags</li>
+</ul></li>
+<li>Commit changes to cajon, test</li>
+<li>Rev cajon version</li>
+<li>change package.json</li>
+<li>tag it</li>
+<li>Update the requirejs-npm directory</li>
+<li>Update version in package.json</li>
+<li>Modify bin/r.js to add: #!/usr/bin/env node</li>
+<li>npm uninstall -g requirejs</li>
+<li>npm install . -g</li>
+<li>r.js -v</li>
+<li>node (then use repl to do require(&quot;requirejs&quot;))</li>
+<li>Try a local install.</li>
+<li>npm publish (in the requirejs-npm/requirejs directory)</li>
+<li>Update the requirejs-nuget directory (DO ON WINDOWS)</li>
+<li>Update the require.js and r.js versions in content/Scripts using <code>volo add -nostamp -f</code></li>
+<li>Update Package.nuspec to rev version number.</li>
+<li>NuGet.exe Pack Package.nuspec</li>
+<li><p>NuGet.exe Push RequireJS.0.0.0.nupkg</p></li>
+</ul>
+<p>Now pull down the tagged version to do a distribution, do this in git/ directory:</p>
+<ul>
+<li>rm -rf ./requirejs-dist ./requirejs-build</li>
+<li>git clone git://github.com/jrburke/requirejs.git requirejs-dist</li>
+<li>cd requirejs-dist</li>
+<li>git checkout 0.0.0</li>
+<li>cd dist</li>
+</ul>
+<p>Run the distribution tasks.</p>
+<p>To generate a build</p>
+<ul>
+<li>./dist-build.sh 0.0.0</li>
+</ul>
+<p>To generate the web site:</p>
+<ul>
+<li>node dist-site.js</li>
+<li>cd dist-site</li>
+<li>zip -r docs.zip ./*</li>
+<li>mv docs.zip ../../../requirejs-build/</li>
+</ul>
+
+  </div>
+  
+  <footer class="styleguide-footer">
+  <p>Styleguide Footer Goes Here</p>
+</footer>
+
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery.min.js"><\/script>')</script>
+-->
+
+<!-- <script src="js/dist/styledocs.js"></script> -->
+
+<script data-main="js/main" src="bower_components/requirejs/require.js"></script>
+<script src="js/dist/styledocs.js"></script>
+
+
+</body>
+</html>
+</body>
+</html>
+ 

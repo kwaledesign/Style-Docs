@@ -1,19 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title> Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <link rel="stylesheet" href="../css/screen.css" media="screen">
-    <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
-</head>
-
+{% block head -%}
+{% include 'includes/_head.html' -%}
+{% endblock %}
 <body class="container">
   
   <header class="styleguide-header">
@@ -40,25 +29,14 @@
   </header>
   
 
+  {% block page -%}
   <div class="page">
-    
+    {{ content }}
   </div>
-  
-  <footer class="styleguide-footer">
-  <p>Styleguide Footer Goes Here</p>
-</footer>
-
-<!--
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery.min.js"><\/script>')</script>
--->
-
-<script src="bower_components/jquery/jquery.min.js"></script>
-<script src="js/vendor/jquery-handsontable/dist/jquery.handsontable.full.js"></script>
-<script src="js/main.js"></script>
-<script src="js/annotation.js"></script>
-</body>
-</html>
+  {% endblock %}
+  {% block footer -%}
+  {% include 'includes/_footer.html' %}
+  {%- endblock %}
 </body>
 </html>
  

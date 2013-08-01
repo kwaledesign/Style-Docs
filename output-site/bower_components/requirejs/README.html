@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Readme</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../css/screen.css" media="screen">
+    <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+</head>
+
+<body class="container">
+  
+  <header class="styleguide-header">
+      <h1>[project-name] Style Documents</h1>
+      
+    <nav class="global-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="specification.html">Specification Document</a></li>
+        <li><a href="brandguidelines.html">Brand Guidelines</a></li>
+        <li><a href="cuti.html">CUTI</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="structured-content.html">Structured Content</a></li>
+        <li><a href="styletile.html">Style Tile</a></li>
+        <li><a href="styleguide.html">Style Guide</a></li>
+        <li><a href="patternlibrary.html">Pattern Library</a></li>
+        <li><a href="wireframe.html">Wireframe</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="prototype.html">Prototype</a></li>
+        <li><a href="#" class="annotation-link">Annotations</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  
+
+  <div class="page">
+    <h1 id="requirejs">RequireJS</h1>
+<p>RequireJS loads plain JavaScript files as well as more defined modules. It is optimized for in-browser use, including in <a href="http://requirejs.org/docs/api.html#webworker">a Web Worker</a>, but it can be used in other JavaScript environments, like Rhino and <a href="http://requirejs.org/docs/node.html">Node</a>. It implements the <a href="https://github.com/amdjs/amdjs-api/wiki/AMD">Asynchronous Module</a> API.</p>
+<p>RequireJS uses plain script tags to load modules/files, so it should allow for easy debugging. It can be used <a href="http://requirejs.org/docs/api.html#jsfiles">simply to load existing JavaScript files</a>, so you can add it to your existing project without having to re-write your JavaScript files.</p>
+<p>RequireJS includes <a href="http://requirejs.org/docs/optimization.html">an optimization tool</a> you can run as part of your packaging steps for deploying your code. The optimization tool can combine and minify your JavaScript files to allow for better performance.</p>
+<p>If the JavaScript file defines a JavaScript module via <a href="http://requirejs.org/docs/api.html#define">define()</a>, then there are other benefits RequireJS can offer: <a href="http://requirejs.org/docs/commonjs.html">improvements over traditional CommonJS modules</a> and <a href="http://requirejs.org/docs/api.html#multiversion">loading multiple versions</a> of a module in a page. RequireJS also has a plugin system that supports features like <a href="http://requirejs.org/docs/api.html#i18n">i18n string bundles</a>, and <a href="http://requirejs.org/docs/api.html#text">text file dependencies</a>.</p>
+<p>RequireJS does not have any dependencies on a JavaScript framework. It is dual-licensed -- new BSD or MIT.</p>
+<p>The standard require.js file is around 5.5KB when minified via Closure Compiler and gzipped.</p>
+<p>RequireJS works in IE 6+, Firefox 2+, Safari 3.2+, Chrome 3+, and Opera 10+.</p>
+<p><a href="http://requirejs.org/docs/download.html">Latest Release</a></p>
+<h2 id="directories">Directories</h2>
+<ul>
+<li><strong>dist</strong>: Scripts and assets to generate the requirejs.org docs, and for generating a require.js release.</li>
+<li><strong>docs</strong>: The raw HTML files for the requirejs.org docs. Only includes the body of each page. Files in <strong>dist</strong> are used to generate a complete HTML page.</li>
+<li><strong>tests</strong>: Tests for require.js.</li>
+<li><strong>testBaseUrl.js</strong>: A file used in the tests inside <strong>tests</strong>. Purposely placed outside the tests directory for testing paths that go outside a baseUrl.</li>
+<li><strong>updatesubs.sh</strong>: Updates projects that depend on require.js Assumes the projects are siblings to this directory and have specific names. Useful to copy require.js to dependent projects easily while in development.</li>
+</ul>
+
+  </div>
+  
+  <footer class="styleguide-footer">
+  <p>Styleguide Footer Goes Here</p>
+</footer>
+
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery.min.js"><\/script>')</script>
+-->
+
+<!-- <script src="js/dist/styledocs.js"></script> -->
+
+<script data-main="js/main" src="bower_components/requirejs/require.js"></script>
+<script src="js/dist/styledocs.js"></script>
+
+
+</body>
+</html>
+</body>
+</html>
+ 
