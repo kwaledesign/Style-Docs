@@ -163,9 +163,47 @@ The prototype phase is the final stage prior to integration with the backend pla
 
 
 ## Customize
-Style-Docs can easily be customized to integrate any documentation requierments.  The primary template pages are written in markdown so adding an additional page is as easy as creating a new named markdown file and adding Jinja include statements to pull in anything you want. Any unneeded pages can simply be deleted. To update navigation to reflect your changes, open up `_template.html` and make any necessary edits - just remember to link to the generated `.html` files, not the `.md` files directly.
+Style-Docs can easily be customized to integrate any documentation requierments.  The primary template pages are written in markdown so adding an additional page is as easy as creating a new named markdown file and adding Jinja include statements to pull in anything you want. Any unneeded pages can simply be deleted. To update navigation to reflect your changes, open up <code>_template.html</code> and make any necessary edits - just remember to link to the generated <code>.html</code> files, not the </code>.md</code> files directly.
 
-If you open up the `includes/` directory, you'll find both a `_header.html` and a `_footer.html`. These partials are used to build the header and footer for each page within your site. You may add any additional directories or files necessary to build out your Style-Docs however you want.
+If you open up the <code>includes/</code> directory, you'll find both a <code>_header.html</code> and a <code>_footer.html</code>. These partials are used to build the header and footer for each page within your site. You may add any additional directories or files necessary to build out your Style-Docs however you want.
+
+
+<hr />
+<hr />
+
+# Guidelines for designing in the browser
+
+1. If it's not in the browser, it isn't real.  Get into the browser as soon as
+   possible.
+2. Sketching is faster than Photoshop. Sketching is thinking.
+3. If it's not in Git, it doesn't exist. Version control everything using
+   sem-ver
+4. Start with restraints (screen size, performance, etc...)
+5. Remove as much friction as possible between prototype code and production
+   code.  Develop a framework. Use a scaffolding process (Yeoman or Compass
+   extension or Git and Bash scripts), Use a build pipeline and automate with Grunt.
+6. Use Sass. Adhere to SMACSS. Write OOCSS. Use BEM naming convention. Document
+   this methodology and your specific implementation so that you can test
+   against this standard to ensure compliance.
+7. Code review frequently throughout the entire process.
+8. Style guide driven development. Automate this process with Dexy.
+9. Test driven development. Test for syntax, test for coding standards, test for
+   reference (browser test), test for regression. Automate as much of this as
+   possible with tools lik
+   CSSCSS/Phantom/Casper/Ghoststory/Cucumber/Lint/Browser Stack/etc... (Use
+   frozen DOM and Style Guide to avoid false-positives due to content changes).
+10. Test on _real_ devices as soon as possible.
+11. Focus thinking on defining problems outside of the context of any specific
+    solution
+12. Discovery is the most important step in the process. Uncover as much as
+    possible about the project in order to accurately scope. Uncover as much as
+    possible about restraints for accurate discovery brief. This is the guiding
+    document for the entire project - reference it often and use it to justify
+    decisions and hold stakeholders accountable. This helps to protect the
+    integrity of the process from personal oppinions.
+13. The performance budget is the most important responsive design deliverable.
+    Like the Discovery Brief, it is used to maintain focus on problems and
+    restraints rather than particular solutions. 
 
 
 ##Inspiration
