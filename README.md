@@ -16,7 +16,7 @@ devices](http://opensignal.com/reports/fragmentation-2013/) through the use of
 enhancement](http://jakearchibald.com/2013/progressive-enhancement-still-important/).
 Style-Docs is a framework for [style guide driven
 devlopment](https://speakerdeck.com/jina/style-guide-driven-ui-design-with-sass)
-using responsive design deliverables highly influenced by [Stephen Hay's](https://twitter.com/stephenhay) excellent
+using [responsive design deliverables](http://daverupert.com/2013/04/responsive-deliverables/) highly influenced by [Stephen Hay's](https://twitter.com/stephenhay) excellent
 [responsive design
 workflow](http://www.amazon.com/Responsive-Design-Workflow-Stephen-Hay/dp/0321887867)
 
