@@ -132,57 +132,35 @@ Copy and paste the output URL into a browser to view your site files.
 
 # Guidelines for designing in the browser
 
-1. If it's not in the browser, it isn't real.  Get into the browser as soon as
-   possible.
-2. Sketching is faster than Photoshop. Sketching is thinking.
-3. If it's not in Git, it doesn't exist. Version control everything using
-   sem-ver
-4. Start with restraints and seek to understand the problem before considering
-   solutions. Never impose solutions to old problems onto new problems.
-5. Remove as much friction as possible between prototype code and production
-   code.  Develop a framework. Use a scaffolding process (Yeoman or Compass
-   extension or Git and Bash scripts), Use a build pipeline and automate with Grunt.
-6. Use Sass. Adhere to SMACSS. Write OOCSS. Use BEM naming convention. Document
-   this methodology and your specific implementation so that you can test
-   against this standard to ensure compliance.
-7. Code review frequently throughout the entire process. 
-8. Style guide driven development. Automate this process with Dexy.
-9. Test driven development. Test for syntax, test for coding standards, test for
-   reference (browser test), test for regression. Automate as much of this as
-   possible with tools lik
-   CSSCSS/Phantom/Casper/Ghoststory/Cucumber/Lint/Browser Stack/etc... (Use
-   frozen DOM and Style Guide to avoid false-positives due to content changes).
-10. Test on _real_ devices as soon as possible.
-11. Focus thinking on defining problems outside of the context of any specific
-    solution
-12. Discovery is the most important step in the process. Uncover as much as
-    possible about the project in order to accurately scope. Uncover as much as
-    possible about restraints for accurate discovery brief. This is the guiding
-    document for the entire project - reference it often and use it to justify
-    decisions and hold stakeholders accountable. This helps to protect the
-    integrity of the process from personal oppinions.
-13. The performance budget is the most important responsive design deliverable.
-    Like the Discovery Brief, it is used to maintain focus on problems and
-    restraints rather than particular solutions. 
-14. Words have meaning. When eliciting feedback from client, always frame the
-    question in the context of a previously approved deliverable, the user, or
-    a specific use case. Never ask for feedback in a way that allows room for
-    personal preference.
-15. Make design decisions holistically, not sequentially. 
-16. Make design decisions conditionally with the understanding that things will
-    change as assumptions are challenged as you continue toward a final
-    solution. Continuously ask "what if?", "why is this wrong?" and constantly
-    challenge solutions.
-17. Work fluidly between concept and detail to learn how one informs the other.
-    Ensure that the granularity of your client's feedback matches the level of
-    detail of the deliverable. (Lo-fi visuals get lo-fi feedback and vis
-    versa).
+  1. Start with restraints and seek to understand the problem before considering solutions. Never impose solutions to old problems onto new problems. Focus thinking on defining problems outside of the context of any specific solution
 
+  2. Sketching is faster than Photoshop. Sketching is thinking.
+
+  3. If it's not in the browser, it isn't real.  Get into the browser as soon as possible, but continuously return to the sketch pad to quickly explore ideas before commiting to code.
+
+  4. If it's not in Git, it doesn't exist. Version control everything using sem-ver
+
+  5. Work fluidly between concept and detail to learn how one informs the other. Ensure that the granularity of your client's feedback matches the level of detail of the deliverable. (Lo-fi visuals get lo-fi feedback and vis versa).
+
+  6. Remove as much friction as possible between prototype code and production code.  Develop a framework. Use a scaffolding process (Yeoman or Compass extension or Git and Bash scripts), Use a build pipeline and automate this process with Grunt.
+
+  7. Archetecture is critical. Use Sass. Adhere to SMACSS. Write OOCSS. Use BEM naming convention. Document this methodology and your specific implementation within your coding standards so that you can test against this standard to ensure compliance.
+
+  9. Style guide driven development. Automate this process with Dexy. Code review frequently throughout the entire process. 
+
+  10. Test driven development. Test for syntax, test for coding standards, test for reference (browser test and style guide), test for regression. Automate as much of this as possible with tools like CSSCSS, PhantomJS, CasperJS, Ghoststory, Cucumber, Lint, CSSEST, Browser Stack, etc... (Use a 'frozen DOM' and your Style Guide to avoid false-positives due to content changes). Test on _real_ devices as soon as possible.
+
+  11. Words have meaning. When eliciting feedback from client, always frame the question in the context of a previously approved deliverable, the user, or a specific use case. Never ask for feedback in a way that allows room for personal preference.
+
+  12. Make design decisions holistically, not sequentially. Every 'micro-level' design decision should fit well within the 'macro-level'.
+
+  13. Make design decisions conditionally with the understanding that things will change as assumptions are challenged as you continue toward a final solution. Continuously ask "what if?", "why is this wrong?" and constantly challenge solutions. Avoid prideful investment in solutions.
 
 ## Responsive Deliverables
-
 Out of the box, Style-Docs includes several documents commonly used throughout the design phase of a responsive build.  These of course won't fit every use case or project requirement, but they can easily be modified, removed, or supplemented in order to tailer fit to any specification. The project documents included by default are intended to steer the direction of a responsive build by providing finer grain detail at each stage of the process while building on the stage previous.
 
+## Specification Document
+Discovery is the most important step in the process. Uncover as much as possible about the project in order to accurately scope. Uncover as much as possible about restraints for accurate discovery brief. This is the guiding document for the entire project - reference it often and use it to justify decisions and hold stakeholders accountable. This helps to protect the integrity of the process from personal oppinions.
 
 ### Brand Guidelines
 Brand Guidelines, inspired by Dustin Curtis's [Open Brand](http://dcurt.is/the-open-brand), are used to develop brand definitions that can be used properly and referenced consistently by team members of any level of design experience.
