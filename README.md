@@ -143,6 +143,12 @@ Brand Guidelines, inspired by Dustin Curtis's [Open Brand](http://dcurt.is/the-o
 A "Cuti" report is a User Experience document that identifies a site's Content, Users (and user contexts), Tasks, and Interactions. User Experience methodologies can vary a great deal based on personal preference and project requirements, but they all boil down to a few fundamental definitions. The CUTI report summarizes these definitions in order to keep these findings front and center in order to allow for UX to steer the design and development process.
 
 ### Performance Budget
+Besides the discovery brief, the performance budget is the most important
+deliverable within the entire responsive process because it lays out the most
+important project restraints. Also, the performance budget is very useful in
+the way it forces stakeholders to focus on problems and restraints, rather than
+specific solutions. This document should be referenced throughout the process
+and referenced for every design decision. 
 
 ### Style Tile
 [Style Tiles](www.styletil.es) are a design deliverable consisting of fonts, colors, and interface elements that communicate the essence of a visual brand for the web. They help form a common visual language between the designers and the stakeholders and provide a catalyst for discussions around the preferences and goals of the client. Style tiles establish a direct connection with actual interface elements without defining layout.
