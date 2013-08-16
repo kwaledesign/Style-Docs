@@ -159,7 +159,7 @@ Copy and paste the output URL into a browser to view your site files.
 ## Responsive Deliverables
 Out of the box, Style-Docs includes several documents commonly used throughout the design phase of a responsive build.  These of course won't fit every use case or project requirement, but they can easily be modified, removed, or supplemented in order to tailer fit to any specification. The project documents included by default are intended to steer the direction of a responsive build by providing finer grain detail at each stage of the process while building on the stage previous.
 
-## Specification Document
+### Specification Document
 Discovery is the most important step in the process. Uncover as much as possible about the project in order to accurately scope. Uncover as much as possible about restraints for accurate discovery brief. This is the guiding document for the entire project - reference it often and use it to justify decisions and hold stakeholders accountable. This helps to protect the integrity of the process from personal oppinions.
 
 ### Brand Guidelines
