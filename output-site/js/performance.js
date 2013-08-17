@@ -31,5 +31,31 @@
 
   });
 
+  // Chart.js script for perfromance pie chart
+
+  //Get context with jQuery - using jQuery's .get() method.
+  var ctx = $("#performanceChart").get(0).getContext("2d");
+  //This will get the first returned node in the jQuery collection.
+  var performanceChart = new Chart(ctx);
+
+  var chartData = [
+      {
+          value: 30,
+          color:"#F38630"
+        },
+      {
+          value : 50,
+          color : "#E0E4CC"
+        },
+        {
+          value : 100,
+          color : "#69D2E7"
+        }     
+  ]
+
+  var options = new Object();
+
+  new Chart(ctx).Pie(chartData,options);
+
 })();
 

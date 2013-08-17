@@ -36,6 +36,8 @@ From a non-technical perspective, list the features or interactions requiering J
 
 <div id="performanceBudget"></div>
 
+<canvas id="performanceChart" width="400" height="400"></canvas>
+
 ## Performance Evaluation of Current Site
 For redesign projects, an accurate analysis of the site's current performance helps to identify potential bottlenecks and areas of improvement. 
 
