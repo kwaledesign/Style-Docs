@@ -1,14 +1,14 @@
 (function() {
 
-  // off-canvus annotation slider 
-  var $annotationSlider = $('.annotation--slider'),
+  // off-canvus annotation slide
+  var $annotationSlide = $('.annotation--slide'),
     $annotationLink = $('.annotation-link'),
-    $page = $('.page');
+    $main = $('.main');
  
   $annotationLink.on("click", function(){
     $annotationLink.toggleClass('is-active');
-    $annotationSlider.toggleClass('is-active');
-    $page.toggleClass('is-slide');
+    $annotationSlide.toggleClass('is-active');
+    $main.toggleClass('is-slide');
     return false;
   });
 
