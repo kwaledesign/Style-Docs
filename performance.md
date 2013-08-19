@@ -1,4 +1,15 @@
-<div class="copy">
+
+<div class="annotation--slide">
+  <h3>Performance Annotations</h3>
+  <ol class="annotation">
+    <li>Annotation one</li>
+    <li>Annotation two</li>
+    <li>Annotation three</li>
+    <li>Annotation four</li>
+  </ol>
+</div>
+
+<div class="main copy">
 
 # Performance
 
@@ -9,7 +20,8 @@ Amazon's web team found that [100ms delay correlated into a 1% decrease in sales
 >The important point is to look at every decisionright through the design/build processas something that has consequence. Having a pre-defined ‘budget’ is a cleartangible way to frame decisions about what can and can’t be be includedand at a suitably early stage in the project. It can also potentially provide some justification to the client about why certain things have been omitted (or ratherswapped out for something else). - [Clearleft, "Responsive Design on a Budget"](http://clearleft.com/thinks/responsivedesignonabudget/)
 
 ## Performance Budget
-Example: 500kb limit per page and at least 1500ms load time on mobile.
+
+<p class="lead">Example: 500kb limit per page and an average 1500ms load time on mobile 3G network.</p>
 
 ### Feature Evaluation
 When considering adding a design feature to a site that will exceed the net performance budget, proceed with one of the following:
@@ -46,5 +58,5 @@ For redesign projects, an accurate analysis of the site's current performance he
   * [Pingdom Performance Tool](http://tools.pingdom.com/fpt/)
   * Google Chrome Dev Tools
 
-
 </div>
+
