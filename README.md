@@ -1,7 +1,6 @@
-
 # Style-Docs
 
-<p class="lead">A framework for the rapid development of responsive design deliverables and style guide driven development in the browser.</p>
+A framework for the rapid development of responsive design deliverables and style guide driven development in the browser.
 
 > “The way we publish on the web is mostly derived from what we know about putting ink on paper. The future of content is in smaller discrete objects that can be assembled into new containers.” - [Karen McGrane](https://twitter.com/karenmcgrane) 
 

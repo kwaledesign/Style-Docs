@@ -1,16 +1,14 @@
-<div class="copy">
-
 # Style Tile
 
 ## Typography Pallet
-{{ (d['components/styletile.html|htmlsections']['typography']) }}
+typography
 
 ## Color Pallet
-{{ (d['components/color-pallet.html|htmlsections']['color-stack']) }}
-{{ (d['components/color-pallet.html|htmlsections']['tint-stack']) }}
-{{ (d['components/color-pallet.html|htmlsections']['tone-stack']) }}
-{{ (d['components/color-pallet.html|htmlsections']['shade-stack']) }}
-{{ (d['components/color-pallet.html|htmlsections']['textures']) }}
+color stack
+tint stack
+tone stack
+shade stack
+textures
 
 ## Design Objectives
 <div class="design-objectives">
@@ -43,4 +41,3 @@
   </section>
 </section>
 
-</div>

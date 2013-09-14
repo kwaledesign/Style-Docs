@@ -1,5 +1,3 @@
-<div class="copy">
-
 # Prototype
 
 Link to live wireframe prototype
@@ -14,9 +12,3 @@ Are we missing any important chunks? How about the relative importance of the ch
 
 At this stage we’re trying to make sure we have all the stuff we need on the page before we start designing it.
 
-
-<div class="annotation--slider">
-  annotation Jinja include goes here
-</div>   
-
-</div>

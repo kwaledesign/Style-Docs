@@ -1,5 +1,3 @@
-<div class="copy">
-
 # Brand Guidelines
 
 Brand Guidelines, inspired by Dustin Curtis's [Open Brand](http://dcurt.is/the-open-brand), are used to develop brand definitions that can be used properly and referenced consistently by teammembers of any level of design experience.
@@ -89,4 +87,3 @@ Include SVG vector definitions for the brand, logo, and logotype, with a default
 # ai/ Directory
 The original vector files used by the graphic artist to create the brand. These should not ever be directly edited by anyone other than the author.  Files in this directory serve as a redundant backup of the original artwork.
 
-</div>

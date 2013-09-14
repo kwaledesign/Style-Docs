@@ -1,16 +1,3 @@
-
-<div class="annotation--slide">
-  <h3>Performance Annotations</h3>
-  <ol class="annotation">
-    <li>Annotation one</li>
-    <li>Annotation two</li>
-    <li>Annotation three</li>
-    <li>Annotation four</li>
-  </ol>
-</div>
-
-<div class="main copy">
-
 # Performance
 
 <p class="lead">Performance is user experience.</p>
@@ -26,11 +13,11 @@ Amazon's web team found that [100ms delay correlated into a 1% decrease in sales
 ### Feature Evaluation
 When considering adding a design feature to a site that will exceed the net performance budget, proceed with one of the following:
 
-  1. Optimize an existing feature or asset on the page.
+1. Optimize an existing feature or asset on the page.
 
-  2. Remove an existing feature or asset from the page.
+2. Remove an existing feature or asset from the page.
 
-  3. Don’t add the new feature or asset.
+3. Don’t add the new feature or asset.
 
 ***
 ### Branding Assets
@@ -45,11 +32,6 @@ List the images used in the design elements for each template (ie headers and ba
 ### JavaScript
 From a non-technical perspective, list the features or interactions requiering JavaScript and the weight of each script. Always use [progressive enhancement](http://jakearchibald.com/2013/progressive-enhancement-still-important/) when building dynamic interactions and make appoint to explain what this means for legacy browsers in the context of overall performance gains.
 
-
-<div id="performanceBudget"></div>
-
-<canvas id="performanceChart" width="400" height="400"></canvas>
-
 ## Performance Evaluation of Current Site
 For redesign projects, an accurate analysis of the site's current performance helps to identify potential bottlenecks and areas of improvement. 
 
@@ -57,6 +39,4 @@ For redesign projects, an accurate analysis of the site's current performance he
   * [Web Page Test](http://www.webpagetest.org/)
   * [Pingdom Performance Tool](http://tools.pingdom.com/fpt/)
   * Google Chrome Dev Tools
-
-</div>
 
