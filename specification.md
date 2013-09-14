@@ -1,4 +1,3 @@
-
 # Specification Document
 
 The specification document spells out the goals and strategies for the project. It’s the victory list and the game plan.
