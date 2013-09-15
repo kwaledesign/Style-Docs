@@ -1,0 +1,16 @@
+---
+layout: default
+title: Performance Budget
+---
+
+<section>
+  <h1>Performance Budget</h1>
+
+{% capture performance %}{% include _includes/markdown/performance.md %}{% endcapture %}
+{{ performance | markdownify }}
+
+{% include _includes/markup performance-table.html %}
+
+{% include _includes/markup performance-chart.html %}
+
+</section>
