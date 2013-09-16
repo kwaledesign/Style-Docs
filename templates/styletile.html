@@ -1,0 +1,16 @@
+---
+layout: default
+title: Style Tile
+---
+
+<section>
+  <h1>Style Tile</h1>
+
+{% capture styletile %}{% include markdown/styletile.md %}{% endcapture %}
+{{ styletile | markdownify }}
+
+{% include markup/color-pallet.html %}
+
+{% include markup/typography-pallet.html %}
+
+</section>
