@@ -1,0 +1,14 @@
+---
+layout: default
+title: Grid
+---
+
+<section>
+  <h1>CUTI Report</h1>
+
+{% capture grid %}{% include markdown/grid.md %}{% endcapture %}
+{{ grid | markdownify }}
+
+{% include markup/grid.html %}
+
+</section>
