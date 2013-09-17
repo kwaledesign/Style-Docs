@@ -1,0 +1,13 @@
+---
+layout: default
+title: About
+---
+
+<section>
+  <h1>About Style-Docs</h1>
+
+{% capture about %}{% include markdown/about.md %}{% endcapture %}
+{{ about | markdownify }}
+
+
+</section>
