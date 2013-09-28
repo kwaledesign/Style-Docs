@@ -2,7 +2,7 @@
 
   // off-canvus annotation slide
   var $annotationSlider = $('.js-annotation-slider'),
-    $annotationLink = $('.js-annotation-link'),
+    $annotationLink = $('.js-annotation-link');
     //$main = $('.main');
  
   $annotationLink.on("click", function(){
