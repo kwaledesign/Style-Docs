@@ -7,7 +7,7 @@
  
   $annotationLink.on("click", function(){
     $annotationLink.toggleClass('is-active');
-    $annotationSlide.toggleClass('is-active');
+    $annotationSlider.toggleClass('is-active');
     //$main.toggleClass('is-slide');
     return false;
   });

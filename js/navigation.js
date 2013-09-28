@@ -7,7 +7,7 @@
  
   $navLink.on("click", function(){
     $navLink.toggleClass('is-active');
-    $navSlide.toggleClass('is-active');
+    $navSlider.toggleClass('is-active');
     //$main.toggleClass('is-slide');
     return false;
   });
