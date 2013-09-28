@@ -15,4 +15,81 @@ pre {
 
 
 
+.home,
+.copy { margin-left: 250px; }
+
+/**
+ * Style-Docs Header
+ *
+ */
+.header {
+  width: 100%;
+  padding: 10px;
+  z-index: 2;
+  background: black(10);
+  color: black(0);
+}
+
+/**
+ * Style-Docs Nav Stuructre
+ *
+ * extends the nav object
+ */
+
+
+.nav-styledocs--structure {
+  display: block;
+  width: 250px;
+  position: absolute;
+  top: 115px;
+  left: 0;
+  bottom: 0;
+  padding: $spacer-unit;
+}
+
+/**
+ * Style-Docs Nav Skin
+ *
+ * extends the nav object
+ */
+.nav-styledocs--skin {
+  background: $muted-color--bg;
+
+}
+
+
+/**
+ * Style-Docs Navigation Slider
+ *
+ */
+.nav-slider {
+  margin-left: -100%;
+}
+
+.nav-slider.is-active {
+  margin-left: 0;
+}
+
+
+/**
+ * Style-Docs Annotation Slider
+ *
+ */
+
+.annotation-slider {
+  display: block;
+  width: 250px;
+  position: absolute;
+  top: 115px;
+  right: 0;
+  bottom: 0;
+  padding: $spacer-unit;
+  background: $muted-color--bg;
+  margin-right: -100%;
+}
+
+.annotation-slider.is-active {
+  margin-right: 0;
+}
+
 
