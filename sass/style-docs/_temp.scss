@@ -13,11 +13,6 @@ pre {
   margin: 0;
 }
 
-
-
-.home,
-.copy { margin-left: 250px; }
-
 /**
  * Style-Docs Header
  *
@@ -26,8 +21,27 @@ pre {
   width: 100%;
   padding: 10px;
   z-index: 2;
-  background: black(10);
-  color: black(0);
+  background: black(30);
+  color: black(20);
+  position: absolute;
+  @extend %cf;
+  & h1 {
+    float: left;
+    margin: 10px;
+    font-size: 1.5em;
+    font-family: $helvetica;
+  }
+}
+
+// refactor this...do not style js prefixed class in production code!
+.js-nav-link {
+  float: left;
+  margin: 10px;
+}
+// refactor this...do not style js prefixed class in production code!
+.js-annotation-link {
+  float: right;
+  margin: 10px;
 }
 
 /**
@@ -35,16 +49,16 @@ pre {
  *
  * extends the nav object
  */
-
-
-.nav-styledocs--structure {
+.nav-slider--structure {
   display: block;
   width: 250px;
-  position: absolute;
-  top: 115px;
+  margin-left: -100%;
+  top: 0;
   left: 0;
   bottom: 0;
   padding: $spacer-unit;
+  overflow: auto;
+  position: fixed;
 }
 
 /**
@@ -52,18 +66,19 @@ pre {
  *
  * extends the nav object
  */
-.nav-styledocs--skin {
+.nav-slider--skin {
   background: $muted-color--bg;
-
+  transition: all 0.5s cubic-bezier(0.09, 0.68, 0, 0.99) 0s;
 }
-
 
 /**
  * Style-Docs Navigation Slider
  *
  */
+// add these two classes to the template files and remove .nav-slider
 .nav-slider {
-  margin-left: -100%;
+  @extend .nav-slider--structure;
+  @extend .nav-slider--skin;
 }
 
 .nav-slider.is-active {
@@ -76,20 +91,33 @@ pre {
  *
  */
 
-.annotation-slider {
+.annotation-slider--structure {
   display: block;
   width: 250px;
   position: absolute;
-  top: 115px;
+  top: 0;
   right: 0;
   bottom: 0;
   padding: $spacer-unit;
-  background: $muted-color--bg;
   margin-right: -100%;
+  overflow: auto;
+  position: fixed;
+}
+
+.annotation-slider--skin {
+  background: $muted-color--bg;
+  transition: all 0.5s cubic-bezier(0.09, 0.68, 0, 0.99) 0s;
+}
+
+.annotation-slider {
+  @extend .annotation-slider--structure;
+  @extend .annotation-slider--skin;
 }
 
 .annotation-slider.is-active {
   margin-right: 0;
 }
+
+
 
 
