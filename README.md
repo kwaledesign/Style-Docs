@@ -58,9 +58,7 @@ One of the final steps in developing a design system is considering the layout f
 The prototype phase is the final stage prior to integration with the backend platform. These can remain relatively low-fidelity or plugin design elements from the previous stages. At this stage of the process layouts can be thoroughly tested. 
 
 ## Customize
-Style-Docs can easily be customized to integrate any documentation requierments.  The primary template pages are written in markdown so adding an additional page is as easy as creating a new named markdown file and adding Jinja include statements to pull in anything you want. Any unneeded pages can simply be deleted. To update navigation to reflect your changes, open up <code>_template.html</code> and make any necessary edits - just remember to link to the generated <code>.html</code> files, not the </code>.md</code> files directly.
-
-If you open up the <code>includes/</code> directory, you'll find both a <code>_header.html</code> and a <code>_footer.html</code>. These partials are used to build the header and footer for each page within your site. You may add any additional directories or files necessary to build out your Style-Docs however you want.
+Style-Docs can easily be customized to integrate any documentation requierments.  The primary template pages are written in markdown so adding an additional page is as easy as creating a new named markdown file and adding Jinja include statements to pull in anything you want. Any unneeded pages can simply be deleted. 
 
 # Guidelines for designing in the browser
 
