@@ -49,6 +49,13 @@ pre {
  *
  * extends the nav object
  */
+.nav-styledocs-header {
+  padding: 0; 
+  margin: 10px 0 10px 10px;
+  font-size: 1.5em;
+  font-family: $helvetica;
+}
+
 .nav-slider--structure {
   display: block;
   width: 250px;
@@ -95,21 +102,21 @@ pre {
  */
 .nav-styledocs--skin {
   & > li a:hover {
-    background: white(20); 
+    background: white(15); 
   }
   a {
     padding: 10px 10px 0 10px;
-    color: $blue-green;
+    color: $blue-green--tint-1;
     font-weight: normal;                   
     text-decoration: none;
     &:visited { 
-      color: $blue-green; 
+      color: $blue-green--tint-1; 
     }
     &:hover { 
-      color: $blue-green--tint-2; 
+      color: $blue-green--tint-3; 
     } 
     &:focus { 
-      color: $blue-green--tint-2; 
+      color: $blue-green--tint-3; 
     }
   }
 }
