@@ -56,7 +56,7 @@ pre {
   top: 0;
   left: 0;
   bottom: 0;
-  padding: $spacer-unit;
+  padding: 0; //$spacer-unit;
   overflow: auto;
   position: fixed;
 }
@@ -67,8 +67,12 @@ pre {
  * extends the nav object
  */
 .nav-slider--skin {
-  background: $muted-color--bg;
+  background: white(10);
   transition: all 0.5s cubic-bezier(0.09, 0.68, 0, 0.99) 0s;
+  & > li {
+    display: block;
+
+  }
 }
 
 /**
@@ -85,6 +89,34 @@ pre {
   margin-left: 0;
 }
 
+/**
+ * Nav Styledocs Skin
+ * 
+ */
+.nav-styledocs--skin {
+  & > li a:hover {
+    background: white(20); 
+  }
+  a {
+    padding: 10px 10px 0 10px;
+    color: $blue-green;
+    font-weight: normal;                   
+    text-decoration: none;
+    &:visited { 
+      color: $blue-green; 
+    }
+    &:hover { 
+      color: $blue-green--tint-2; 
+    } 
+    &:focus { 
+      color: $blue-green--tint-2; 
+    }
+  }
+}
+
+.nav__vertical a {
+  display: block !important; // overrides .nav li a { display: inline-block; } //
+}
 
 /**
  * Style-Docs Annotation Slider
@@ -117,7 +149,5 @@ pre {
 .annotation-slider.is-active {
   margin-right: 0;
 }
-
-
 
 
